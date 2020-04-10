@@ -16,7 +16,7 @@
 .main-nav__link-mail {
   display: block;
   padding-left: 35px;
-  background-image: url("../img/phone-call.svg");
+  background-image: url("../img/envelope.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   margin-left: 94px;
@@ -25,7 +25,7 @@
 .main-nav__link-tel {
   display: block;
   padding-left: 35px;
-  background-image: url("../img/envelope.svg");
+  background-image: url("../img/phone-call.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -45,6 +45,10 @@
   margin-left: 45px;
 }
 
+.main-nav__tel {
+  margin-left: 85px;
+}
+
 .main-nav__email {
   margin-left: 85px;
 }
@@ -52,6 +56,10 @@
 @media (max-width: $tablet-full-width) {
   .main-nav {
     margin-bottom: 110px;
+  }
+
+  .main-nav__tel {
+    margin-left: 0;
   }
 
   .main-nav__order {
