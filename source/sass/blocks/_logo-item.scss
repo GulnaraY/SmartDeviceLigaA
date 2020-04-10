@@ -1,0 +1,11 @@
+.logo-item {
+  flex-grow: 1;
+  margin-top: 7px;
+}
+
+@media (max-width: $tablet-full-width) {
+  .logo-item {
+    margin-top: 4px;
+    margin-left: -5px;
+  }
+}

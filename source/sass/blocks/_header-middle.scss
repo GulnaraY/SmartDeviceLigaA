@@ -1,0 +1,18 @@
+.header-middle {
+  margin-bottom: 278px;
+  position: relative;
+}
+
+@media (max-width: $tablet-full-width) {
+  .header-middle {
+    margin-bottom: 166px;
+    margin-left: 59px;
+  }
+}
+
+@media (max-width: $mobile-full-width) {
+  .header-middle {
+    margin-bottom: 44px;
+    margin-left: 0;
+  }
+}

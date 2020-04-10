@@ -1,0 +1,30 @@
+@mixin desktop-wrapper {
+  width: $desktop-width;
+  padding-left: 250px;
+  padding-right: 250px;
+  margin: 0 auto;
+}
+
+@mixin desktop-full-wrapper {
+  min-width: $desktop-full-width;
+  margin: 0 auto;
+}
+
+@mixin tablet-wrapper {
+  width: $tablet-width;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 0 auto;
+}
+
+@mixin tablet-full-wrapper {
+  min-width: 320px;
+  margin: 0;
+}
+
+@mixin mobile-wrapper {
+  width: $mobile-width;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin: 0 auto;
+}

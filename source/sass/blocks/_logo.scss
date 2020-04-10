@@ -1,0 +1,11 @@
+.logo__image {
+  width: 210px;
+  height: 55px;
+}
+
+@media (max-width: $mobile-full-width) {
+  .logo__image {
+    width: 38px;
+    height: 38px;
+  }
+}

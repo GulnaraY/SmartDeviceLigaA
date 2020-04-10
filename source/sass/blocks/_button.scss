@@ -1,0 +1,48 @@
+.button {
+  border: 1px solid $content-color;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 15px;
+  text-transform: uppercase;
+  background-color: transparent;
+  text-align: center;
+  color: $content-color;
+  font-family: $font-additional;
+  font-size: $font-size-desktop-xs;
+  line-height: $line-height-xs;
+  letter-spacing: 0.05em;
+  font-weight: $font-weight-bold;
+  width: 185px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: $content-color;
+  color: $main-color;
+}
+
+.button:active {
+  color: $header-background-color;
+}
+
+.button--blue {
+  width: 407px;
+  background-color: $accent-color;
+  border: none;
+  padding: 18px;
+}
+
+@media (max-width: $tablet-full-width) {
+  .button--blue {
+    width: 379px;
+  }
+}
+
+@media (max-width: $mobile-full-width) {
+  .button--blue {
+    width: 287px;
+  }
+}

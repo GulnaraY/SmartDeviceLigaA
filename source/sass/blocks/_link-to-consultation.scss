@@ -1,0 +1,27 @@
+.link-to-consultation {
+  margin-left: 96px;
+}
+
+.link-to-consultation__text--mobile {
+  display: none;
+}
+
+@media (max-width: $tablet-full-width) {
+  .link-to-consultation {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: $mobile-full-width) {
+  .link-to-consultation {
+    margin-left: 0;
+  }
+
+  .link-to-consultation__text {
+    display: none;
+  }
+
+  .link-to-consultation__text--mobile {
+    display: inline;
+  }
+}

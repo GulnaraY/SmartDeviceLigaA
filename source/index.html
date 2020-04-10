@@ -4,10 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Smart Device: умные технологии</title>
+  <link rel="preload" href="fonts/ptmono-regular-webfont.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptmono-regular-webfont.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotocondensed-regular-webfont.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotocondensed-regular-webfont.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotocondensed-bold-webfont.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotocondensed-bold-webfont.woff" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <nav class="site-navigation">
+        <ul class="main-nav">
+          <li class="main-nav__item logo-item">
+            <a class="logo">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/logo-mobile.svg" width="38" heigth="38">
+                <img class="logo__image" width="210" height="55" src="img/logo-created.svg" alt="Логотип Smart Device">
+              </picture>
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__email">
+            <a href="mailto:info@sd.ru" class="main-nav__link main-nav__link-mail"><span class="main-nav__text">info@sd.ru</span></a>
+          </li>
+          <li class="main-nav__item main-nav__tel">
+            <a href="tel:+74950005252" class="main-nav__link main-nav__link-tel"><span class="main-nav__text">+7 (495) 000 52 52</span></a>
+          </li>
+          <li class="main-nav__item main-nav__order">
+            <a href="" class="button">Заказать звонок</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-middle">
+          <h1 class="page-title">Печатные платы</h1>
+          <p class="page-promo">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+          <a href="#" class="link-to-consultation button button--blue"><span class="link-to-consultation__text">Получить бесплатную консультацию</span><span class="link-to-consultation__text--mobile">Бесплатная консультация</span></a>
+          <a href="#" class="scroll-link">Скролл вниз</a>
+      </div>
+    </div>
+  </header>
 </body>
 </html>
