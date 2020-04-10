@@ -5,6 +5,13 @@
   margin: 0 auto;
 }
 
+@mixin desktop-middle-wrapper{
+  width: $desktop-width;
+  padding-left: 370px;
+  padding-right: 370px;
+  margin: 0 auto;
+}
+
 @mixin desktop-full-wrapper {
   min-width: $desktop-full-width;
   margin: 0 auto;

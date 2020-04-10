@@ -1,0 +1,92 @@
+.feature {
+  border: 1px solid $accent-color-2;
+  border-left: 3px solid $accent-color;
+  padding: 45px;
+  padding-top: 95px;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+  font-size: $font-size-desktop-s;
+  line-height: $line-height-s;
+  background-repeat: no-repeat;
+  background-position: 47px 40px;
+}
+
+.feature:hover {
+  background-color: $accent-color;
+  color: $content-color;
+}
+
+.feature__title {
+  margin: 0;
+  margin-bottom: 18px;
+  padding: 0;
+  font-weight: $font-weight-normal;
+  color: $accent-color;
+  font-size: $font-size-desktop-h3;
+  line-height: $line-height-m;
+  font-family: $font-additional;
+}
+
+.feature__text {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+.feature--time {
+  background-image: url("../img/stopwatch.svg");
+}
+
+.feature--time:hover {
+  background-image: url("../img/stopwatch-white.svg");
+}
+
+.feature--suppliers {
+  background-image: url("../img/hired.svg");
+}
+
+.feature--suppliers:hover {
+  background-image: url("../img/hired-white.svg");
+}
+
+.feature--confidential {
+  background-image: url("../img/detective.svg");
+}
+
+.feature--confidential:hover {
+  background-image: url("../img/detective-white.svg");
+}
+
+.feature--cost {
+  background-image: url("../../img/tag.svg");
+}
+
+.feature--cost:hover {
+  background-image: url("../../img/tag-white.svg");
+}
+
+@media (max-width: $tablet-full-width) {
+  .feature {
+    padding: 25px;
+    padding-top: 63px;
+    padding-bottom: 36px;
+    background-position: 24px 22px;
+  }
+
+  .feature__title {
+    margin-bottom: 10px;
+    letter-spacing: -1.6px;
+  }
+}
+
+@media (max-width: $tablet-full-width) {
+  .feature {
+    margin-bottom: 20px;
+    padding-top: 70px;
+    padding-bottom: 22px;
+  }
+
+  .feature__title {
+    font-size: $font-size-mobile-medium;
+  }
+}

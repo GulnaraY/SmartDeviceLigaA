@@ -1,0 +1,27 @@
+.features-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.features-list__item {
+  width: 575px;
+  min-height: 299px;
+  box-sizing: border-box;
+}
+
+@media (max-width: $tablet-full-width) {
+  .features-list__item {
+    width: 345px;
+    min-height: 232px;
+  }
+}
+
+@media (max-width: $mobile-full-width) {
+  .features-list__item {
+    width: 290px;
+  }
+}

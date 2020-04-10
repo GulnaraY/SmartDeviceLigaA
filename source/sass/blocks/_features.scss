@@ -1,0 +1,31 @@
+.features {
+  @include desktop-full-wrapper;
+  display: flex;
+  padding-top: 111px;
+}
+
+.features__container {
+  @include desktop-middle-wrapper;
+}
+
+@media (max-width: $tablet-full-width) {
+  .features {
+    @include tablet-full-wrapper;
+    padding-top: 56px;
+  }
+
+  .features__container {
+    @include tablet-wrapper;
+  }
+}
+
+@media (max-width: $mobile-full-width) {
+  .features {
+    padding-top: 67px;
+  }
+  .features__container {
+    @include mobile-wrapper;
+    padding-left: 0;
+  }
+}
+
