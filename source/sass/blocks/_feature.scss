@@ -9,10 +9,15 @@
   line-height: $line-height-s;
   background-repeat: no-repeat;
   background-position: 47px 40px;
+  background-color: $content-color;
 }
 
 .feature:hover {
   background-color: $accent-color;
+  color: $content-color;
+}
+
+.feature:hover .feature__title {
   color: $content-color;
 }
 
@@ -79,7 +84,7 @@
   }
 }
 
-@media (max-width: $tablet-full-width) {
+@media (max-width: $mobile-full-width) {
   .feature {
     margin-bottom: 20px;
     padding-top: 70px;

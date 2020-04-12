@@ -35,6 +35,12 @@
   padding: 18px;
 }
 
+.button--border {
+  width: 180px;
+  border: 1px solid $accent-color;
+  color: $accent-color;
+}
+
 @media (max-width: $tablet-full-width) {
   .button--blue {
     width: 379px;

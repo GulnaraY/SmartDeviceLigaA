@@ -1,0 +1,27 @@
+.page-middle {
+  @include desktop-full-wrapper;
+  background-image: url("../img/Polygon1.svg"),
+    url("../img/Polygon2.svg"),
+    url("../img/polygone3.svg"),
+    url("../../img/polygone4.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: 201px 46px, 98% 42%, 0 115%, 53% 38%;
+}
+
+@media (max-width: $tablet-full-width) {
+  .page-middle {
+    @include tablet-full-wrapper;
+    background-image: url("../img/polygone-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 34%;
+  }
+}
+
+@media (max-width: $mobile-full-width) {
+  .page-middle {
+    @include mobile-wrapper;
+    background-image: url("../img/polygone-mobile.png");
+    background-repeat: no-repeat;
+    background-position: 36% 68%;
+  }
+}
