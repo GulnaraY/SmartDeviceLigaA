@@ -1,0 +1,35 @@
+.questions {
+  @include desktop-full-wrapper;
+  background-color: $accent-color;
+  color: $content-color;
+}
+
+.questions__container {
+  @include desktop-middle-wrapper;
+  width: 600px;
+  padding-right: 344px;
+  padding-left: 976px;
+  padding-top: 91px;
+  padding-bottom: 113px;
+  background-image: url("../img/polygone-questions-3.png"),
+    url("../img/plane.svg"),
+    url("../img/polygone-questions-1.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 15% 51%, 25% 42%, 100% 62%;
+}
+
+.questions__title {
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 0;
+  font-weight: normal;
+  font-family: $font-additional;
+  font-size: $font-size-desktop-h2;
+  line-height: $line-height-sm;
+}
+
+.questions__text {
+  margin: 0;
+  margin-bottom: 53px;
+  padding: 0;
+}

@@ -1,0 +1,52 @@
+.products-list {
+  width: 1175px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.products-list__link {
+  display: flex;
+  width: 370px;
+  height: 620px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  color: $content-color;
+}
+
+.products-list__link:hover,
+.products-list__link:focus {
+  outline: 2px solid $accent-color;
+  outline-offset: 5px;
+}
+
+.products-list__link:active {
+  outline-color: $accent-color-2;
+}
+
+.products-list__title {
+  margin: 0;
+  padding: 0;
+  margin-top: 54px;
+  margin-left: 50px;
+  width: 162px;
+  font-family: $font-additional;
+  font-size: $font-size-desktop-h3-2;
+  font-weight: normal;
+  line-height: $line-height-m;
+}
+
+.products-list__link--prod {
+  background-image: url("../img/circuit-boards-prod.jpg");
+}
+
+.products-list__link--inst {
+  background-image: url("../img/circuit-board-inst.jpg");
+}
+
+.products-list__link--lights {
+  background-image: url("../img/lights-complection.jpg");
+}

@@ -1,0 +1,36 @@
+.products {
+  @include desktop-full-wrapper;
+  background-color: $accent-color-3;
+  padding-top: 131px;
+  padding-bottom: 127px;
+}
+
+.products__container {
+  @include desktop-middle-wrapper;
+}
+
+.products__title {
+  margin: 0;
+  margin-bottom: 56px;
+  padding: 0;
+  color: $content-color;
+  font-family: $font-additional;
+  font-size: $font-size-desktop-h2;
+  font-weight: normal;
+}
+
+@media (max-width: $tablet-full-width) {
+  .products {
+    @include tablet-full-wrapper;
+  }
+
+  .products__container {
+    @include tablet-wrapper;
+  }
+}
+
+@media (max-width: $mobile-full-width) {
+  .products__container {
+    @include mobile-wrapper;
+  }
+}
