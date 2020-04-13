@@ -2,8 +2,9 @@
   @include desktop-full-wrapper;
   display: flex;
   padding-top: 111px;
-  margin-bottom: 76px;
-  width: 1178px;
+  margin-bottom: 68px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .features__container {
@@ -14,7 +15,7 @@
   .features {
     @include tablet-full-wrapper;
     padding-top: 56px;
-    width: 770px;
+    width: 100%;
   }
 
   .features__container {
@@ -25,11 +26,10 @@
 @media (max-width: $mobile-full-width) {
   .features {
     padding-top: 67px;
-    width: 290px;
+    width: 100%;
   }
 
   .features__container {
     @include mobile-wrapper;
-    padding-left: 0;
   }
 }

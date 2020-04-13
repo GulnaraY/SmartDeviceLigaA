@@ -1,27 +1,30 @@
 @mixin desktop-wrapper {
-  width: $desktop-width;
-  padding-left: 250px;
-  padding-right: 250px;
-  margin: 0 auto;
+  box-sizing: border-box;
+  width: auto;
+  padding-left: 13%;
+  padding-right: 13%;
+  // margin: 0 auto;
 }
 
 @mixin desktop-middle-wrapper {
-  width: 1155px;
-  padding-left: 370px;
-  padding-right: 395px;
-  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: auto;
+  padding-left: 20%;
+  padding-right: 20%;
+  // margin: 0 auto;
 }
 
 @mixin desktop-full-wrapper {
-  min-width: $desktop-full-width;
+  box-sizing: border-box;
+  max-width: $desktop-full-width;
   margin: 0 auto;
 }
 
 @mixin tablet-wrapper {
-  width: $tablet-width;
-  padding-left: 25px;
-  padding-right: 25px;
-  margin: 0 auto;
+  width: auto;
+  padding-left: 3.3%;
+  padding-right: 3.3%;
+  // margin: 0 auto;
 }
 
 @mixin tablet-full-wrapper {
@@ -30,8 +33,8 @@
 }
 
 @mixin mobile-wrapper {
-  width: $mobile-width;
-  padding-left: 14px;
-  padding-right: 14px;
+  max-width: auto;
+  padding-left: 4.3%;
+  padding-right: 4.3%;
   margin: 0 auto;
 }

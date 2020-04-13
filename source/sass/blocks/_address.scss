@@ -1,0 +1,34 @@
+.address {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-size: $font-size-desktop-ss;
+}
+
+.address__title {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-family: $font-additional;
+  font-size: $font-size-desktop-ss;
+}
+
+.address__phone-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.address__phone-link {
+  color: $main-color;
+}
+
+.address__phone-link:hover,
+.address__phone-link:focus {
+  color: $accent-color;
+}
+
+.address__phone-link:active {
+  color: $accent-color-3;
+}

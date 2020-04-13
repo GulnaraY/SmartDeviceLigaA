@@ -1,0 +1,11 @@
+.popup {
+  flex-direction: column;
+}
+
+.popup--closed {
+  display: none;
+}
+
+.popup--opened {
+  display: flex;
+}

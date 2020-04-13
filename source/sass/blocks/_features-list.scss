@@ -8,20 +8,19 @@
 }
 
 .features-list__item {
-  width: 575px;
+  width: 49%;
   min-height: 299px;
   box-sizing: border-box;
 }
 
 @media (max-width: $tablet-full-width) {
   .features-list__item {
-    width: 345px;
     min-height: 232px;
   }
 }
 
 @media (max-width: $mobile-full-width) {
   .features-list__item {
-    width: 290px;
+    width: 100%;
   }
 }

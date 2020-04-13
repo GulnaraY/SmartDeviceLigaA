@@ -15,7 +15,7 @@
   line-height: $line-height-xs;
   letter-spacing: 0.05em;
   font-weight: $font-weight-bold;
-  width: 185px;
+  width: 100%;
 }
 
 .button:hover,
@@ -29,10 +29,10 @@
 }
 
 .button--blue {
-  width: 407px;
+  width: auto;
   background-color: $accent-color;
   border: none;
-  padding: 18px;
+  padding: 20px 3%;
 }
 
 .button--border {

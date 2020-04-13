@@ -18,8 +18,8 @@
   .page-header {
     @include tablet-full-wrapper;
     padding-top: 17px;
-    background-image: url("../img/circuit-board-tablet.png"), url("../img/triangles-tablet.png"), url("../img/bg-banner.png");
-    background-position: 100% 32%, 100% 27%, 0 0;
+    background-image: url("../img/circuit-board-tablet.png"), url("../img/triangles-tablet.svg"), url("../img/bg-banner.png");
+    background-position: 100% 32%, 113% 0, 0 0;
   }
 
   .page-header__wrapper {
@@ -35,6 +35,6 @@
 
   .page-header {
     background-image: url("../img/circuit-board-mob.png"), url("../img/triangles-mob.png"), url("../img/bg-banner.png");
-    background-position: 57% 23%, 54% 27%, 0 0;
+    background-position: 57% 23%, 100% 27%, 0 0;
   }
 }
