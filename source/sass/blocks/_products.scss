@@ -1,7 +1,7 @@
 .products {
   @include desktop-full-wrapper;
   background-color: $accent-color-3;
-  padding-top: 131px;
+  padding-top: 90px;
   padding-bottom: 127px;
 }
 
@@ -22,15 +22,30 @@
 @media (max-width: $tablet-full-width) {
   .products {
     @include tablet-full-wrapper;
+    padding-top: 48px;
   }
 
   .products__container {
     @include tablet-wrapper;
   }
+
+  .products__title {
+    margin-bottom: 48px;
+    font-size: $font-size-tablet-h2;
+  }
 }
 
 @media (max-width: $mobile-full-width) {
+  .products {
+    padding-bottom: 33px;
+  }
+
   .products__container {
     @include mobile-wrapper;
+  }
+
+  .products__title {
+    font-size: $font-size-mobile-h2;
+    margin-bottom: 17px;
   }
 }

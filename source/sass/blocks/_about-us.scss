@@ -48,7 +48,7 @@
     padding-left: 28%;
     background-image: url("../img/year2005-tablet.png");
     background-position: 4% 0;
-    padding-bottom: 78%;
+    padding-bottom: 78px;
   }
 
   .about-us__title {
@@ -79,6 +79,7 @@
   .about-us__container {
     @include mobile-wrapper;
     background-image: none;
+    padding-bottom: 62px;
   }
 
   .about-us__title {
