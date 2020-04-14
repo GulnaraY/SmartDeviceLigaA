@@ -23,6 +23,7 @@
   .products {
     @include tablet-full-wrapper;
     padding-top: 48px;
+    padding-bottom: 42px;
   }
 
   .products__container {
@@ -37,7 +38,7 @@
 
 @media (max-width: $mobile-full-width) {
   .products {
-    padding-bottom: 33px;
+    padding-bottom: 35px;
   }
 
   .products__container {

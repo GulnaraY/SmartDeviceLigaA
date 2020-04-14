@@ -6,16 +6,18 @@
 
 .questions__container {
   @include desktop-middle-wrapper;
-  width: 600px;
-  padding-right: 344px;
-  padding-left: 976px;
+  width: 100%;
+  padding-right: 18%;
+  display: flex;
+  flex-direction: column;
   padding-top: 91px;
   padding-bottom: 113px;
   background-image: url("../img/polygone-questions-3.png"),
     url("../img/plane.svg"),
     url("../img/polygone-questions-1.png");
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 15% 51%, 25% 42%, 100% 62%;
+  background-position: 15% 49%, 25% 42%, 100% 62%;
+  align-items: flex-end;
 }
 
 .questions__title {
@@ -26,10 +28,54 @@
   font-family: $font-additional;
   font-size: $font-size-desktop-h2;
   line-height: $line-height-sm;
+  width: 601px;
 }
 
 .questions__text {
+  width: 601px;
   margin: 0;
   margin-bottom: 53px;
   padding: 0;
+}
+
+@media (max-width: $tablet-full-width) {
+  .questions {
+    @include tablet-full-wrapper;
+  }
+
+  .questions__container {
+    @include tablet-wrapper;
+    background-image: none;
+    padding-top: 79px;
+    padding-bottom: 104px;
+    padding-left: 12.3%;
+    padding-right: 7.3%;
+  }
+
+  .questions__title {
+    width: 100%;
+    font-size: $font-size-tablet-h2;
+    margin-bottom: 19px;
+  }
+
+  .questions__text {
+    width: 100%;
+    margin-bottom: 57px;
+  }
+}
+
+@media (max-width: $mobile-full-width) {
+  .questions__container {
+    @include mobile-wrapper;
+    padding-top: 29px;
+    padding-bottom: 38px;
+  }
+
+  .questions__title {
+    font-size: $font-size-mobile-h2;
+  }
+
+  .questions__text {
+    margin-bottom: 26px;
+  }
 }
