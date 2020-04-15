@@ -1,5 +1,75 @@
 .popup {
   flex-direction: column;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 490px;
+  margin-left: -245px;
+  margin-top: -300px;
+  background-color: $accent-color;
+  z-index: 11;
+  box-sizing: border-box;
+  color: $content-color;
+  padding-top: 30px;
+}
+
+.popup__title {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: $font-additional;
+  font-size: $font-size-mobile-h2;
+  margin-bottom: 16px;
+}
+
+.popup__intro {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+}
+
+.popup__close {
+  position: absolute;
+  height: 23px;
+  width: 23px;
+  top: 5px;
+  right: 5px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  transform: rotate(45deg);
+}
+
+.popup__close::before {
+  content: "";
+  position: absolute;
+  height: 23px;
+  width: 1px;
+  background-color: $content-color;
+  top: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.popup__close::after {
+  content: "";
+  position: absolute;
+  background-color: $content-color;
+  width: 23px;
+  height: 1px;
+  left: 0;
+  top: 50%;
+  margin-top: -1px;
+}
+
+.popup__container {
+  padding-left: 37px;
+  padding-right: 37px;
+}
+
+.popup__form {
+  width: 100%;
 }
 
 .popup--closed {
@@ -8,4 +78,29 @@
 
 .popup--opened {
   display: flex;
+}
+
+.popup__form-input {
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 33px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.popup__form-textarea {
+  width: 100%;
+  min-height: 76px;
+  margin-bottom: 30px;
+}
+
+.popup__form-button {
+  width: 100%;
+  margin-bottom: 27px;
+}
+
+.popup__form-label {
+  width: 100%;
+  margin-left: 34px;
+  margin-bottom: 34px;
 }

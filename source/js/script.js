@@ -2,6 +2,7 @@
 
 var popupOpenButton = document.querySelector('.open-popup');
 var popup = document.querySelector('.popup');
+var popupOverlay = document.querySelector('.popup-overlay');
 var popupCloseButton = document.querySelector('.popup__close');
 var pagePartsShow = document.querySelector('.page-parts__show');
 var pagePartsList = document.querySelector('.page-parts__list');
@@ -15,6 +16,9 @@ if (popupOpenButton) {
     evt.preventDefault();
     popup.classList.remove('popup--closed');
     popup.classList.add('popup--opened');
+    if (popupOverlay) {
+      popupOverlay.classList.add('popup-overlay--opened');
+    }
   });
 }
 
@@ -23,6 +27,9 @@ if (popupCloseButton) {
     evt.preventDefault();
     popup.classList.remove('popup--opened');
     popup.classList.add('popup--closed');
+    if (popupOverlay) {
+      popupOverlay.classList.remove('popup-overlay--opened');
+    }
   });
 }
 

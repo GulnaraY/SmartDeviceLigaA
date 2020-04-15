@@ -43,15 +43,15 @@
       <div class="header-middle">
         <h1 class="page-title">Печатные платы</h1>
         <p class="page-promo">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a href="#" class="link-to-consultation button button--blue"><span class="link-to-consultation__text">Получить
+        <a href="#questions" class="link-to-consultation button button--blue"><span class="link-to-consultation__text">Получить
             бесплатную консультацию</span><span class="link-to-consultation__text--mobile">Бесплатная
             консультация</span></a>
-        <a href="#" class="scroll-link">Скролл вниз</a>
+        <a href="#features" class="scroll-link">Скролл вниз</a>
       </div>
     </div>
   </header>
   <div class="page-middle">
-    <section class="features">
+    <section class="features" id="features">
       <div class="features__container">
         <ul class="features-list">
           <h2 class="visually-hidden">Преимущества</h2>
@@ -114,7 +114,7 @@
       </ul>
     </div>
   </section>
-  <section class="questions">
+  <section class="questions" id="questions">
     <div class="questions__container">
       <h2 class="questions__title">Остались вопросы? Задайте иx нам!</h2>
       <p class="questions__text">Мы проконсультируем Вас бесплатно</p>
@@ -185,21 +185,22 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
-</body>
-
-</html>
-  <!-- <section class="popup popup--closed">
-    <button class="popup__close" type="button"><span>Закрыть</span></button>
+  <section class="popup popup--closed">
+    <div class="popup__container">
+    <button class="popup__close" type="button"><span class="visually-hidden">Закрыть</span></button>
     <h2 class="popup__title">Закажите звонок</h2>
     <p class="popup__intro">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-    <form action="#" method="post" class="questions__form questions-form">
-      <input class="questions-form__input" type="text" name="name" placeholder="Имя">
-      <input class="questions-form__input" type="tel" name="phone" placeholder="Телефон">
-      <textarea rows="5" name="text">Ваш вопрос<textarea>
-    <input type="checkbox" name="agreement" id="agreement" checked>
-    <label for="agreement"></label>Я согласен на обработку  персональных данных</label>
-    <button type="submit">Задать вопрос</button>
+    <form action="#" method="post" class="questions__form questions-form popup__form">
+      <input class="questions-form__input popup__form-input" type="text" name="name" placeholder="Имя">
+      <input class="questions-form__input popup__form-input" type="tel" name="phone" placeholder="Телефон">
+      <textarea class="questions-form__textarea popup__form-textarea" rows="3" name="text" placeholder="Ваш вопрос"></textarea>
+      <button class="button questions-form__button popup__form-button" type="submit">Отправить</button>
+      <input class="questions-form__checkbox" type="checkbox" name="agreement" id="agreement" checked="">
+    <label class="questions-form__label popup__form-label" for="agreement">Я согласен на обработку  персональных данных</label>
   </form>
+</div>
   </section>
--->
+  <div class="popup-overlay"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>
