@@ -3,6 +3,7 @@
   padding: 0;
   font-style: normal;
   font-size: $font-size-desktop-ss;
+  position: relative;
 }
 
 .address__title {
@@ -29,7 +30,7 @@
 }
 
 .address__phone-item {
-  margin-bottom: 7px;  
+  margin-bottom: 7px;
 }
 
 .address__phone-link {
@@ -43,4 +44,103 @@
 
 .address__phone-link:active {
   color: $accent-color-3;
+}
+
+.address__show {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: none;
+  right: 0;
+  top: 29px;
+  display: none;
+}
+
+.address__hide {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: none;
+  right: 0;
+  top: 29px;
+  display: none;
+}
+
+.address__show::before {
+  content: "";
+  position: absolute;
+  background-color: $show-hide-color;
+  width: 16px;
+  height: 1px;
+  left: 0;
+  top: 50%;
+}
+
+.address__show::after {
+  content: "";
+  position: absolute;
+  background-color: $show-hide-color;
+  width: 1px;
+  height: 16px;
+  left: 50%;
+  top: 0;
+}
+
+.address__hide::before {
+  content: "";
+  position: absolute;
+  background-color: $show-hide-color;
+  width: 16px;
+  height: 1px;
+  left: 0;
+  top: 50%;
+}
+
+.address__show--hidden {
+  display: none;
+}
+
+.address__hide--hidden {
+  display: none;
+}
+
+
+.address__content--shown {
+  display: block;
+}
+
+@media (max-width: $mobile-full-width) {
+  .address__show--shown {
+    display: block;
+  }
+
+  .address__hide--shown {
+    display: block;
+  }
+
+  .address__content--closed {
+    display: none;
+  }
+
+  .address__title {
+    padding-bottom: 27px;
+    padding-top: 27px;
+    margin-bottom: 0;
+  }
+
+  .address__content {
+    margin-top: 5px;
+  }
+
+  .address__text {
+    margin-bottom: 12px;
+  }
+
+  .address__phone-list {
+    margin-bottom: 27px;
+  }
 }

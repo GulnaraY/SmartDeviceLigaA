@@ -148,7 +148,9 @@
         <div class="page-footer__middle">
         <div class="page-footer__parts page-parts">
         <h3 class="page-parts__title">Разделы сайта</h3>
-        <ul class="page-parts__list">
+        <button class="page-parts__show page-parts__show--shown" type="button"><span class="visually-hidden">Показать</span></button>
+        <button class="page-parts__hide page-parts__hide--hidden" type="button"><span class="visually-hidden">Скрыть</span></button>
+        <ul class="page-parts__list page-parts__list--closed">
           <li class="page-parts__item"><a href="" class="page-parts__link">О компании</a></li>
           <li class="page-parts__item"><a href="" class="page-parts__link">Продукты</a></li>
           <li class="page-parts__item"><a href="" class="page-parts__link">Производство печатных плат</a></li>
@@ -160,6 +162,9 @@
         </div>
         <address class="page-footer__address address">
           <h3 class="address__title">Наш офис</h3>
+          <button class="address__show address__show--shown" type="button"><span class="visually-hidden">Показать</span></button>
+          <button class="address__hide address__hide--hidden" type="button"><span class="visually-hidden">Скрыть</span></button>
+          <div class="address__content address__content--closed">
           <p class="address__text">г. Мытищи, Олимпийский проспект, д.10</p>
           <ul class="address__phone-list">
             <li class="address__phone-item">
@@ -172,6 +177,7 @@
               <a href="tel:+792692608079" class="address__phone-link">+7 (926) 926-080-79</a>
             </li>
           </ul>
+        </div>
         </address>
       </div>
       <div class="page-footer__bottom">
@@ -180,6 +186,10 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
   <!-- <section class="popup popup--closed">
     <button class="popup__close" type="button"><span>Закрыть</span></button>
     <h2 class="popup__title">Закажите звонок</h2>
@@ -193,7 +203,3 @@
     <button type="submit">Задать вопрос</button>
   </form>
   </section>
-  <script src="js/script.js"></script> -->
-</body>
-
-</html>
