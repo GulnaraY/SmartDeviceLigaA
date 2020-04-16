@@ -11,24 +11,25 @@ var addressContent = document.querySelector('.address__content');
 var addressShow = document.querySelector('.address__show');
 var addressHide = document.querySelector('.address__hide');
 var nameField = document.querySelector('#popup-name');
- 
-var handleOpenPopup = function (evt) {
-  evt.preventDefault();
-  popup.classList.remove('popup--closed');
-  popup.classList.add('popup--opened');
-  if (popupOverlay) {
-    popupOverlay.classList.add('popup-overlay--opened');
-  }
-  if (nameField) {
-    nameField.focus();
-  }
-};
 
 var handleClosePopup = function () {
   popup.classList.remove('popup--opened');
   popup.classList.add('popup--closed');
   if (popupOverlay) {
     popupOverlay.classList.remove('popup-overlay--opened');
+  }
+};
+
+var handleOpenPopup = function (evt) {
+  evt.preventDefault();
+  popup.classList.remove('popup--closed');
+  popup.classList.add('popup--opened');
+  if (popupOverlay) {
+    popupOverlay.classList.add('popup-overlay--opened');
+    popupOverlay.addEventListener('click', handleClosePopup);
+  }
+  if (nameField) {
+    nameField.focus();
   }
 };
 
