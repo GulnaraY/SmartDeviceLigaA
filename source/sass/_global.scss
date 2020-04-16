@@ -4,6 +4,7 @@ html {
   font-size: $font-size-desktop-s;
   line-height: $line-height-s;
   font-family: $font-general;
+  scroll-behavior: smooth;
 }
 
 body {
