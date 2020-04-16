@@ -9,6 +9,7 @@
 
 .features__container {
   @include desktop-middle-wrapper;
+  display: flex;
 }
 
 @media (max-width: $tablet-full-width) {
