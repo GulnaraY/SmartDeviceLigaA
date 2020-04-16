@@ -70,7 +70,7 @@
 
 .page-footer a:hover,
 .page-footer a:focus {
-  color: $accent-color
+  color: $accent-color;
 }
 
 .page-footer a:active {
@@ -79,12 +79,14 @@
 
 .page-footer__bottom a:hover,
 .page-footer__bottom a:focus {
-  color: $accent-color
+  color: $accent-color;
 }
 
 .page-footer__bottom a:active {
   opacity: 0.5;
 }
+
+
 @media (max-width: $tablet-full-width) {
   .page-footer {
     @include tablet-full-wrapper;

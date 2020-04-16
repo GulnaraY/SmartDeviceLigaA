@@ -11,108 +11,161 @@ var addressContent = document.querySelector('.address__content');
 var addressShow = document.querySelector('.address__show');
 var addressHide = document.querySelector('.address__hide');
 
-if (popupOpenButton) {
-  popupOpenButton.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    popup.classList.remove('popup--closed');
-    popup.classList.add('popup--opened');
-    if (popupOverlay) {
-      popupOverlay.classList.add('popup-overlay--opened');
+var handleOpenPopup = function (evt) {
+  evt.preventDefault();
+  popup.classList.remove('popup--closed');
+  popup.classList.add('popup--opened');
+  if (popupOverlay) {
+    popupOverlay.classList.add('popup-overlay--opened');
+  }
+};
+
+var handleClosePopup = function () {
+  popup.classList.remove('popup--opened');
+  popup.classList.add('popup--closed');
+  if (popupOverlay) {
+    popupOverlay.classList.remove('popup-overlay--opened');
+  }
+};
+
+var showPageParts = function () {
+  if (pagePartsList) {
+    pagePartsList.classList.remove('page-parts__list--closed');
+    pagePartsList.classList.add('page-parts__list--shown');
+  }
+};
+
+var hidePageParts = function () {
+  if (pagePartsList) {
+    pagePartsList.classList.remove('page-parts__list--shown');
+    pagePartsList.classList.add('page-parts__list--closed');
+  }
+};
+
+var showPagePartsShowButton = function () {
+  if (pagePartsShow) {
+    pagePartsShow.classList.remove('page-parts__show--hidden');
+    pagePartsShow.classList.add('page-parts__show--shown');
+  }
+};
+
+var hidePagePartsShowButton = function () {
+  if (pagePartsShow) {
+    pagePartsShow.classList.remove('page-parts__show--shown');
+    pagePartsShow.classList.add('page-parts__show--hidden');
+  }
+};
+
+var showPagePartsHideButton = function () {
+  if (pagePartsHide) {
+    pagePartsHide.classList.remove('page-parts__hide--hidden');
+    pagePartsHide.classList.add('page-parts__hide--shown');
+  }
+};
+
+var hidePagePartsHideButton = function () {
+  if (pagePartsHide) {
+    pagePartsHide.classList.remove('page-parts__hide--shown');
+    pagePartsHide.classList.add('page-parts__hide--hidden');
+  }
+};
+
+var handleShowPageParts = function () {
+  handleHideAddress();
+  hidePagePartsShowButton();
+  showPagePartsHideButton();
+  showPageParts();
+};
+
+var handleHidePageParts = function () {
+  if (pagePartsList) {
+    if (pagePartsList.classList.contains('page-parts__list--shown')) {
+      hidePageParts();
+      hidePagePartsHideButton();
+      showPagePartsShowButton();
     }
-  });
+  }
+};
+
+var showAddress = function () {
+  if (addressContent) {
+    addressContent.classList.remove('address__content--closed');
+    addressContent.classList.add('address__content--shown');
+  }
+};
+
+var hideAddress = function () {
+  if (addressContent) {
+    addressContent.classList.remove('address__content--shown');
+    addressContent.classList.add('address__content--closed');
+  }
+};
+
+var showAddressShowButton = function () {
+  if (addressShow) {
+    addressShow.classList.remove('address__show--hidden');
+    addressShow.classList.add('address__show--shown');
+  }
+};
+
+var hideAddressShowButton = function () {
+  if (showAddress) {
+    addressShow.classList.remove('address__show--shown');
+    addressShow.classList.add('address__show--hidden');
+  }
+};
+
+var showAddressHideButton = function () {
+  if (addressHide) {
+    addressHide.classList.remove('address__hide--hidden');
+    addressHide.classList.add('address__hide--shown');
+  }
+};
+
+var hideAddressHideButton = function () {
+  if (addressHide) {
+    addressHide.classList.remove('address__hide--shown');
+    addressHide.classList.add('address__hide--hidden');
+  }
+};
+
+var handleShowAddress = function () {
+  handleHidePageParts();
+  showAddress();
+  hideAddressShowButton();
+  showAddressHideButton();
+};
+
+var handleHideAddress = function () {
+  if (addressContent) {
+    if (addressContent.classList.contains('address__content--shown')) {
+      hideAddress();
+      hideAddressHideButton();
+      showAddressShowButton();
+    }
+  }
+};
+
+if (popupOpenButton) {
+  popupOpenButton.addEventListener('click', handleOpenPopup);
 }
 
 if (popupCloseButton) {
-  popupCloseButton.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    popup.classList.remove('popup--opened');
-    popup.classList.add('popup--closed');
-    if (popupOverlay) {
-      popupOverlay.classList.remove('popup-overlay--opened');
-    }
-  });
+  popupCloseButton.addEventListener('click', handleClosePopup);
 }
 
 if (pagePartsShow) {
-  pagePartsShow.addEventListener('click', function () {
-    if (addressContent) {
-      if (addressContent.classList.contains('address__content--shown')) {
-        addressContent.classList.remove('address__content--shown');
-        addressContent.classList.add('address__content--closed');
-        addressHide.classList.remove('address__hide--shown');
-        addressHide.classList.add('address__hide--hidden');
-        if (addressShow) {
-          addressShow.classList.remove('address__show--hidden');
-          addressShow.classList.add('address__show--shown');
-        }
-      }
-    }
-    if (pagePartsList) {
-      pagePartsList.classList.remove('page-parts__list--closed');
-      pagePartsList.classList.add('page-parts__list--shown');
-      pagePartsShow.classList.remove('page-parts__show--shown');
-      pagePartsShow.classList.add('page-parts__show--hidden');
-      if (pagePartsHide) {
-        pagePartsHide.classList.remove('page-parts__hide--hidden');
-        pagePartsHide.classList.add('page-parts__hide--shown');
-      }
-    }
-  });
+  pagePartsShow.addEventListener('click', handleShowPageParts);
 }
 
 if (pagePartsHide) {
-  pagePartsHide.addEventListener('click', function () {
-    if (pagePartsList) {
-      pagePartsList.classList.remove('page-parts__list--shown');
-      pagePartsList.classList.add('page-parts__list--closed');
-      pagePartsHide.classList.remove('page-parts__hide--shown');
-      pagePartsHide.classList.add('page-parts__hide--hidden');
-    }
-    if (pagePartsShow) {
-      pagePartsShow.classList.remove('page-parts__show--hidden');
-      pagePartsShow.classList.add('page-parts__show--shown');
-    }
-  });
+  pagePartsHide.addEventListener('click', handleHidePageParts);
 }
 
 if (addressShow) {
-  addressShow.addEventListener('click', function () {
-    if (pagePartsList) {
-      if (pagePartsList.classList.contains('page-parts__list--shown')) {
-        pagePartsList.classList.remove('page-parts__list--shown');
-        pagePartsList.classList.add('page-parts__list--closed');
-        pagePartsHide.classList.remove('page-parts__hide--shown');
-        pagePartsHide.classList.add('page-parts__hide--hidden');
-        if (pagePartsShow) {
-          pagePartsShow.classList.remove('page-parts__show--hidden');
-          pagePartsShow.classList.add('page-parts__show--shown');
-        }
-      }
-    }
-    if (addressContent) {
-      addressContent.classList.remove('address__content--closed');
-      addressContent.classList.add('address__content--shown');
-      addressShow.classList.remove('address__show--shown');
-      addressShow.classList.add('address__show--hidden');
-      if (addressHide) {
-        addressHide.classList.remove('address__hide--hidden');
-        addressHide.classList.add('address__hide--shown');
-      }
-    }
-  });
+  addressShow.addEventListener('click', handleShowAddress);
 }
 
 if (addressHide) {
-  addressHide.addEventListener('click', function () {
-    if (addressContent) {
-      addressContent.classList.remove('address__content--shown');
-      addressContent.classList.add('address__content--closed');
-      addressHide.classList.remove('address__hide--shown');
-      addressHide.classList.add('address__hide--hidden');
-    }
-    if (addressShow) {
-      addressShow.classList.remove('address__show--hidden');
-      addressShow.classList.add('address__show--shown');
-    }
-  });
+  addressHide.addEventListener('click', handleHideAddress);
 }
