@@ -17,6 +17,22 @@
   margin-bottom: 45px;
 }
 
+.questions-form__input::-webkit-input-placeholder {
+  color: $content-color;
+}
+
+.questions-form__input::-moz-placeholder {
+  color: $content-color;
+}
+
+.questions-form__input:-moz-placeholder {
+  color: $content-color;
+}
+
+.questions-form__input:-ms-input-placeholder {
+  color: $content-color;
+}
+
 .questions-form__textarea {
   width: 90%;
   min-height: 125px;
@@ -25,6 +41,22 @@
   background-color: $content-opacity-color;
   color: $content-color;
   margin-bottom: 42px;
+}
+
+.questions-form__textarea::-webkit-input-placeholder {
+  color: $content-color;
+}
+
+.questions-form__textarea::-moz-placeholder {
+  color: $content-color;
+}
+
+.questions-form__textarea:-moz-placeholder {
+  color: $content-color;
+}
+
+.questions-form__textarea:-ms-input-placeholder {
+  color: $content-color;
 }
 
 .questions-form__checkbox {

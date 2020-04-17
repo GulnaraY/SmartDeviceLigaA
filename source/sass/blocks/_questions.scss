@@ -8,16 +8,30 @@
   @include desktop-middle-wrapper;
   width: 100%;
   padding-right: 18%;
+  padding-left: 18%;
   display: flex;
-  flex-direction: column;
   padding-top: 91px;
   padding-bottom: 113px;
+  justify-content: space-between;
   background-image: url("../img/polygone-questions-3.png"),
-    url("../img/plane.svg"),
     url("../img/polygone-questions-1.png");
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 15% 49%, 25% 42%, 100% 62%;
-  align-items: flex-end;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 15% 49%, 100% 62%;
+}
+
+.questions__left-part {
+  width: 42%;
+  display: flex;
+  background-image: url("../img/airplane.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 39%;
+}
+
+.questions__right-part {
+  flex-basis: 49%;
+  flex-grow: 1;
+  margin-left: 10%;
 }
 
 
@@ -51,6 +65,14 @@
     padding-bottom: 104px;
     padding-left: 12.3%;
     padding-right: 7.3%;
+  }
+
+  .questions__left-part {
+    display: none;
+  }
+
+  .questions__right-part {
+    margin-left: 0;
   }
 
   .questions__title {
