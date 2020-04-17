@@ -11,6 +11,21 @@ var addressContent = document.querySelector('.address__content');
 var addressShow = document.querySelector('.address__show');
 var addressHide = document.querySelector('.address__hide');
 var nameField = document.querySelector('#popup-name');
+var phoneField = document.querySelector('#popup-phone');
+var messageField = document.querySelector('#popup-message');
+var popupForm = document.querySelector('.popup__form');
+var isStorageSupport = true;
+var storageName = '';
+var storagePhone = '';
+var storageMessage = '';
+
+try {
+  storageName = localStorage.getItem('name');
+  storagePhone = localStorage.getItem('phone');
+  storageMessage = localStorage.getItem('message');
+} catch (err) {
+  isStorageSupport = false;
+}
 
 var handleClosePopup = function () {
   popup.classList.remove('popup--opened');
@@ -28,8 +43,27 @@ var handleOpenPopup = function (evt) {
     popupOverlay.classList.add('popup-overlay--opened');
     popupOverlay.addEventListener('click', handleClosePopup);
   }
-  if (nameField) {
+
+  if (storageName || storagePhone || storageMessage) {
+    if (nameField) {
+      nameField.value = storageName;
+    }
+    if (phoneField) {
+      phoneField.value = storagePhone;
+    }
+    if (messageField) {
+      messageField.value = storageMessage;
+      messageField.focus();
+    }
+  } else if (nameField) {
     nameField.focus();
+  }
+};
+
+var handleEscPress = function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    handleClosePopup();
   }
 };
 
@@ -151,6 +185,18 @@ var handleHideAddress = function () {
   }
 };
 
+var handleFormSubmit = function (evt) {
+  if (!nameField.value || !phoneField.value || !messageField.value) {
+    evt.preventDefault();
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem('name', nameField.value);
+      localStorage.setItem('phone', phoneField.value);
+      localStorage.setItem('message', messageField.value);
+    }
+  }
+};
+
 if (popupOpenButton) {
   popupOpenButton.addEventListener('click', handleOpenPopup);
 }
@@ -158,6 +204,12 @@ if (popupOpenButton) {
 if (popupCloseButton) {
   popupCloseButton.addEventListener('click', handleClosePopup);
 }
+
+if (popupForm) {
+  popupForm.addEventListener('submit', handleFormSubmit);
+}
+
+window.addEventListener('keydown', handleEscPress);
 
 if (pagePartsShow) {
   pagePartsShow.addEventListener('click', handleShowPageParts);
