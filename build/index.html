@@ -120,13 +120,13 @@
       <div class="questions__right-part">
       <h2 class="questions__title">Остались вопросы? Задайте иx нам!</h2>
       <p class="questions__text">Мы проконсультируем Вас бесплатно</p>
-      <form action="#" method="post" class="questions__form questions-form">
-        <input class="questions-form__input" type="text" name="name" placeholder="Имя" id="questions-name">
-        <input class="questions-form__input" type="tel" name="phone" placeholder="Телефон">
-        <textarea class="questions-form__textarea" rows="3" name="text" placeholder="Ваш вопрос"></textarea>
-        <button class="button questions-form__button" type="submit">Задать вопрос</button>
-        <input class="questions-form__checkbox" type="checkbox" name="agreement" id="agreement-field" checked="">
-        <label class="questions-form__label" for="agreement-field">Я согласен на обработку персональных данных</label>
+      <form action="#" method="post" class="questions__form questions-form" id="page-form">
+        <input type="text" name="name" placeholder="Имя" id="questions-name" required="">
+        <input type="tel" name="phone" placeholder="Телефон" id="tel-page" required="" maxlength="14" minlength="14">
+        <textarea rows="3" name="text" placeholder="Ваш вопрос"></textarea>
+        <button class="button" type="submit">Задать вопрос</button>
+        <input type="checkbox" name="agreement" id="agreement-field" checked="">
+        <label for="agreement-field">Я согласен на обработку персональных данных</label>
       </form>
       </div>
 
@@ -194,13 +194,13 @@
       <button class="popup__close" type="button"><span class="visually-hidden">Закрыть</span></button>
       <h2 class="popup__title">Закажите звонок</h2>
       <p class="popup__intro">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-      <form action="#" method="post" class="questions__form questions-form popup__form">
-        <input class="questions-form__input popup__form-input" type="text" name="name" placeholder="Имя" id="popup-name">
-        <input class="questions-form__input popup__form-input" type="tel" name="phone" placeholder="Телефон" id="popup-phone">
-        <textarea class="questions-form__textarea popup__form-textarea" rows="3" name="text" placeholder="Ваш вопрос" id="popup-message"></textarea>
-        <button class="button questions-form__button popup__form-button" type="submit">Отправить</button>
-        <input class="questions-form__checkbox" type="checkbox" name="agreement" id="agreement" checked="">
-        <label class="questions-form__label popup__form-label" for="agreement">Я согласен на обработку персональных
+      <form action="#" method="post" class="questions-form popup__form">
+        <input type="text" name="name" placeholder="Имя" id="popup-name" required="">
+        <input type="tel" name="phone" placeholder="Телефон" id="popup-phone" required="" maxlength="14" minlength="14">
+        <textarea rows="3" name="text" placeholder="Ваш вопрос" id="popup-message" required=""></textarea>
+        <button class="button popup__form-button" type="submit">Отправить</button>
+        <input type="checkbox" name="agreement" id="popup-agreement" checked="">
+        <label for="popup-agreement">Я согласен на обработку персональных
           данных</label>
       </form>
     </div>

@@ -14,6 +14,13 @@ var nameField = document.querySelector('#popup-name');
 var phoneField = document.querySelector('#popup-phone');
 var messageField = document.querySelector('#popup-message');
 var popupForm = document.querySelector('.popup__form');
+var pageForm = document.querySelector('#page-form');
+var popupCheckbox = document.querySelector('#popup-agreement');
+var pageFormArgeement = document.querySelector('#agreement-field');
+var phonePageField = document.querySelector('#tel-page');
+var pageNameField = document.querySelector('#name-input');
+var pageTextField = document.querySelector('#page-text');
+
 var isStorageSupport = true;
 var storageName = '';
 var storagePhone = '';
@@ -186,7 +193,7 @@ var handleHideAddress = function () {
 };
 
 var handleFormSubmit = function (evt) {
-  if (!nameField.value || !phoneField.value || !messageField.value) {
+  if (!nameField.value || !phoneField.value || !messageField.value || !popupCheckbox.checked) {
     evt.preventDefault();
   } else {
     if (isStorageSupport) {
@@ -194,6 +201,12 @@ var handleFormSubmit = function (evt) {
       localStorage.setItem('phone', phoneField.value);
       localStorage.setItem('message', messageField.value);
     }
+  }
+};
+
+var handlePageFormSubmit = function (evt) {
+  if (!pageFormArgeement.checked || !pageNameField.value || !pageTextField.value || phonePageField.value.length < 14) {
+    evt.preventDefault();
   }
 };
 
@@ -207,6 +220,41 @@ if (popupCloseButton) {
 
 if (popupForm) {
   popupForm.addEventListener('submit', handleFormSubmit);
+}
+
+if (pageForm) {
+  pageForm.addEventListener('submit', handlePageFormSubmit);
+}
+
+if (phoneField) {
+  phoneField.addEventListener('focus', function () {
+    if (!phoneField.value) {
+      phoneField.value = '+7(';
+    }
+    phonePageField.addEventListener('input', function () {
+      if (phoneField.value.length === 6) {
+        if (!phoneField.value.includes(')')) {
+          phoneField.value = phoneField.value + ')';
+        }
+      }
+    });
+  });
+}
+
+if (phonePageField) {
+  phonePageField.addEventListener('focus', function () {
+    if (!phonePageField.value) {
+      phonePageField.value = '+7(';
+    }
+
+    phonePageField.addEventListener('input', function () {
+      if (phonePageField.value.length === 6) {
+        if (!phonePageField.value.includes(')')) {
+          phonePageField.value = phonePageField.value + ')';
+        }
+      }
+    });
+  });
 }
 
 window.addEventListener('keydown', handleEscPress);

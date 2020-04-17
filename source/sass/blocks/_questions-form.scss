@@ -6,7 +6,7 @@
   width: 601px;
 }
 
-.questions-form__input {
+.questions-form input {
   box-sizing: border-box;
   width: 45%;
   margin-right: 5%;
@@ -17,23 +17,23 @@
   margin-bottom: 45px;
 }
 
-.questions-form__input::-webkit-input-placeholder {
+.questions-form input::-webkit-input-placeholder {
   color: $content-color;
 }
 
-.questions-form__input::-moz-placeholder {
+.questions-form input::-moz-placeholder {
   color: $content-color;
 }
 
-.questions-form__input:-moz-placeholder {
+.questions-form input:-moz-placeholder {
   color: $content-color;
 }
 
-.questions-form__input:-ms-input-placeholder {
+.questions-form input:-ms-input-placeholder {
   color: $content-color;
 }
 
-.questions-form__textarea {
+.questions-form textarea {
   width: 90%;
   min-height: 125px;
   padding: 13px 15px;
@@ -43,31 +43,31 @@
   margin-bottom: 42px;
 }
 
-.questions-form__textarea::-webkit-input-placeholder {
+.questions-form textarea::-webkit-input-placeholder {
   color: $content-color;
 }
 
-.questions-form__textarea::-moz-placeholder {
+.questions-form textarea::-moz-placeholder {
   color: $content-color;
 }
 
-.questions-form__textarea:-moz-placeholder {
+.questions-form textarea:-moz-placeholder {
   color: $content-color;
 }
 
-.questions-form__textarea:-ms-input-placeholder {
+.questions-form textarea:-ms-input-placeholder {
   color: $content-color;
 }
 
-.questions-form__checkbox {
+.questions-form input[type="checkbox"] {
   display: none;
 }
 
-.questions-form__button {
+.questions-form button {
   width: 270px;
 }
 
-.questions-form__label {
+.questions-form label {
   position: relative;
   display: block;
   width: 236px;
@@ -75,7 +75,7 @@
   margin-left: 70px;
 }
 
-.questions-form__label::before {
+.questions-form label::before {
   content: "";
   position: absolute;
   left: -32px;
@@ -86,7 +86,7 @@
   border: 1px solid $content-color;
 }
 
-.questions-form__checkbox:checked ~ .questions-form__label::before {
+.questions-form input[type="checkbox"]:checked ~ label::before {
   background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -97,36 +97,36 @@
     width: 100%;
   }
 
-  .questions-form__input {
+  .questions-form input {
     padding: 15px 15px;
   }
 
-  .questions-form__textarea {
+  .questions-form textarea {
     min-height: 133px;
   }
 
-  .questions-form__button {
+  .questions-form button {
     width: 45%;
   }
 }
 
 @media (max-width: $mobile-full-width) {
-  .questions-form__input {
+  .questions-form input {
     width: 100%;
     margin-bottom: 34px;
     margin-right: 0;
   }
 
-  .questions-form__textarea {
+  .questions-form textarea {
     min-height: 77px;
     margin-bottom: 30px;
   }
 
-  .questions-form__button {
+  .questions-form button {
     width: 100%;
   }
 
-  .questions-form__label {
+  .questions-form label {
     margin-left: 34px;
     margin-top: 20px;
     width: 100%;
