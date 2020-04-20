@@ -2,9 +2,9 @@
   @include desktop-full-wrapper;
   color: $content-color;
   padding-top: 25px;
-  background-image:  url("../img/triangle.png"), url("../img/bg-banner.png");
+  background-image: url("../img/triangle.png"), url("../img/bg-banner.png");
   background-repeat: no-repeat, no-repeat;
-  background-position:  81% 70%, 0 0;
+  background-position: 81% 70%, 0 0;
   background-color: $header-background-color;
   display: flex;
   flex-direction: column;
@@ -17,7 +17,6 @@
     background-image: url("../img/triangles-tablet.svg"), url("../img/bg-banner.png");
     background-position: 113% 0, 0 0;
   }
-
 }
 
 @media (max-width: $mobile-full-width) {

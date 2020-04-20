@@ -1,9 +1,9 @@
 .header-middle {
+  @include desktop-wrapper;
   margin-bottom: 103px;
   position: relative;
   display: flex;
   justify-content: space-between;
-  @include desktop-wrapper;
   padding-right: 0;
 }
 
@@ -22,14 +22,10 @@
 
 @media (max-width: $tablet-full-width) {
   .header-middle {
+    @include tablet-wrapper;
     margin-bottom: 54px;
     margin-left: 8.6%;
-    @include tablet-wrapper;
     padding-right: 0;
-  }
-
-  .header-middle__left-column {
-
   }
 
   .header-middle__right-column {
@@ -46,8 +42,8 @@
   }
 
   .header-middle__left-column {
-    width: 100%;
     @include mobile-wrapper;
+    width: 100%;
     box-sizing: border-box;
   }
 

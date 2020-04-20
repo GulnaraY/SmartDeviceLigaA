@@ -1,5 +1,5 @@
 .main-nav {
-  padding: 0;
+  @include desktop-wrapper padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
@@ -7,7 +7,6 @@
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 163px;
-  @include desktop-wrapper
 }
 
 .main-nav__link {
@@ -60,8 +59,8 @@
 
 @media (max-width: $tablet-full-width) {
   .main-nav {
-    margin-bottom: 31px;
     @include tablet-wrapper;
+    margin-bottom: 31px;
   }
 
   .main-nav__order {
