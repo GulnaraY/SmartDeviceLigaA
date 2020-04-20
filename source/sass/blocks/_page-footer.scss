@@ -14,7 +14,9 @@
 }
 
 .page-footer__container {
-  @include desktop-wrapper;
+  @include tablet-wrapper;
+  margin: 0 auto;
+  max-width: 1417px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
