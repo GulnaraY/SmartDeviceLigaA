@@ -18,7 +18,7 @@
   background-position: 0 0;
 }
 
-.about-us__title {
+.about-us h2 {
   margin: 0;
   padding: 0;
   font-family: $font-additional;
@@ -27,7 +27,7 @@
   margin-bottom: 26px;
 }
 
-.about-us__text {
+.about-us p {
   margin: 0;
   padding: 0;
   width: auto;
@@ -58,13 +58,13 @@
     background-image: url("../img/year2005-tablet.png");
   }
 
-  .about-us__title {
+  .about-us h2 {
     font-size: $font-size-tablet-h2;
     margin-top: 25px;
     margin-bottom: 30px;
   }
 
-  .about-us__text {
+  .about-us p {
     width: 532px;
     margin-bottom: 28px;
   }
@@ -93,13 +93,13 @@
     padding-left: 0;
   }
 
-  .about-us__title {
+  .about-us h2 {
     margin-top: 39px;
     margin-bottom: 25px;
     font-size: $font-size-mobile-h2;
   }
 
-  .about-us__text {
+  .about-us p {
     width: auto;
     margin-bottom: 47px;
   }

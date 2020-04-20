@@ -9,17 +9,7 @@
   font-style: normal;
 }
 
-.address__title {
-  margin: 0;
-  margin-bottom: 26px;
-  padding: 0;
-  font-weight: normal;
-  text-transform: uppercase;
-  font-family: $font-additional;
-  font-size: $font-size-desktop-ss;
-}
-
-.address__text {
+.address p {
   margin: 0;
   padding: 0;
   margin-bottom: 7px;
@@ -131,17 +121,11 @@
     display: none;
   }
 
-  .address__title {
-    padding-bottom: 27px;
-    padding-top: 27px;
-    margin-bottom: 0;
-  }
-
   .address__content {
     margin-top: 5px;
   }
 
-  .address__text {
+  .address p {
     margin-bottom: 12px;
   }
 

@@ -11,7 +11,7 @@
   margin: 0 auto;
 }
 
-.products__title {
+.products h2 {
   margin: 0;
   margin-bottom: 56px;
   padding: 0;
@@ -32,7 +32,7 @@
     @include tablet-wrapper;
   }
 
-  .products__title {
+  .products h2 {
     margin-bottom: 48px;
     font-size: $font-size-tablet-h2;
   }
@@ -47,7 +47,7 @@
     @include mobile-wrapper;
   }
 
-  .products__title {
+  .products h2 {
     font-size: $font-size-mobile-h2;
     margin-bottom: 17px;
   }

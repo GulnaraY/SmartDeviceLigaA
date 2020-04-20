@@ -10,6 +10,19 @@
   flex-direction: column;
 }
 
+.page-header h1 {
+  margin: 0;
+  margin-bottom: 34px;
+  padding: 0;
+  font-family: $font-additional;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  font-size: $font-size-desctop-xl;
+  line-height: $line-height-xs;
+  letter-spacing: -5.6px;
+  margin-top: 62px;
+}
+
 @media (max-width: $tablet-full-width) {
   .page-header {
     @include tablet-full-wrapper;
@@ -17,11 +30,24 @@
     background-image: url("../img/triangles-tablet.svg"), url("../img/bg-banner.png");
     background-position: 113% 0, 0 0;
   }
+
+  .page-header h1 {
+    width: 370px;
+    font-size: $font-size-desktop-l;
+    margin-bottom: 34px;
+    margin-top: 77px;
+  }
 }
 
 @media (max-width: $mobile-full-width) {
   .page-header {
     background-image: url("../img/triangles-mob.png"), url("../img/bg-banner.png");
     background-position: 100% 27%, 0 0;
+  }
+
+  .page-header h1 {
+    width: 222px;
+    font-size: $font-size-mobile-xl;
+    margin-top: -24px;
   }
 }

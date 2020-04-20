@@ -32,7 +32,7 @@
 }
 
 
-.questions__title {
+.questions h2 {
   margin: 0;
   margin-bottom: 13px;
   padding: 0;
@@ -43,7 +43,7 @@
   width: 100%;
 }
 
-.questions__text {
+.questions p {
   width: 100%;
   margin: 0;
   margin-bottom: 53px;
@@ -73,13 +73,13 @@
     flex-basis: 100%;
   }
 
-  .questions__title {
+  .questions h2 {
     width: 100%;
     font-size: $font-size-tablet-h2;
     margin-bottom: 19px;
   }
 
-  .questions__text {
+  .questions p {
     width: 100%;
     margin-bottom: 57px;
   }
@@ -92,11 +92,11 @@
     padding-bottom: 43px;
   }
 
-  .questions__title {
+  .questions h2 {
     font-size: $font-size-mobile-h2;
   }
 
-  .questions__text {
+  .questions p {
     margin-bottom: 26px;
   }
 }

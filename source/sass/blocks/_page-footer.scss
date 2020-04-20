@@ -31,7 +31,7 @@
   width: 30%;
 }
 
-.page-footer__logo {
+.page-footer img {
   margin-bottom: 44px;
 }
 
@@ -86,6 +86,16 @@
 
 .page-footer__bottom a:active {
   opacity: 0.5;
+}
+
+.page-footer h3 {
+  margin: 0;
+  margin-bottom: 26px;
+  padding: 0;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-family: $font-additional;
+  font-size: $font-size-desktop-ss;
 }
 
 
@@ -197,5 +207,11 @@
 
   .page-footer__address {
     border-bottom: 1px solid $border-color;
+  }
+
+  .page-footer h3 {
+    padding-bottom: 27px;
+    padding-top: 27px;
+    margin-bottom: 0;
   }
 }

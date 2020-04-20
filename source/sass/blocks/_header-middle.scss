@@ -20,6 +20,27 @@
   min-height: 520px;
 }
 
+.header-middle p {
+  margin: 0;
+  padding: 0;
+  font-size: $font-size-desktop-m;
+  line-height: $line-height-m;
+  width: auto;
+  padding-left: 96px;
+  position: relative;
+  margin-bottom: 43px;
+}
+
+.header-middle p::before {
+  content: "";
+  width: 66px;
+  height: 2px;
+  background-color: $content-color;
+  position: absolute;
+  left: 0;
+  top: 13px;
+}
+
 @media (max-width: $tablet-full-width) {
   .header-middle {
     @include tablet-wrapper;
@@ -31,6 +52,17 @@
   .header-middle__right-column {
     background-image: url("../../img/circuit-board-tablet.png");
     background-position: 100% 0;
+  }
+
+  .header-middle p {
+    padding-left: 50px;
+    width: 356px;
+    font-size: $font-size-medium;
+    margin-bottom: 56px;
+  }
+
+  .header-middle p::before {
+    width: 33px;
   }
 }
 
@@ -52,5 +84,11 @@
     background-position: 100% 0;
     width: 100%;
     min-height: 222px;
+  }
+
+  .header-middle p {
+    width: auto;
+    font-size: $font-size-mobile-m;
+    margin-bottom: 42px;
   }
 }
