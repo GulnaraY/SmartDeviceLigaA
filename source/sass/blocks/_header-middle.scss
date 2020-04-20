@@ -44,33 +44,37 @@
 @media (max-width: $tablet-full-width) {
   .header-middle {
     @include tablet-wrapper;
-    margin-bottom: 54px;
+    margin-bottom: 58px;
     margin-left: 8.6%;
+    padding-left: 2.9%;
     padding-right: 0;
   }
 
   .header-middle__right-column {
     background-image: url("../../img/circuit-board-tablet.png");
-    background-position: 100% 0;
+    background-position: 100% 5px;
   }
 
   .header-middle p {
     padding-left: 50px;
     width: 356px;
     font-size: $font-size-medium;
-    margin-bottom: 56px;
+    margin-bottom: 57px;
   }
 
   .header-middle p::before {
     width: 33px;
+    left: 3px;
+    top: 14px;
   }
 }
 
 @media (max-width: $mobile-full-width) {
   .header-middle {
-    margin-bottom: 40px;
+    margin-bottom: 42px;
     margin-left: 0;
     flex-direction: column-reverse;
+    padding-left: 0;
   }
 
   .header-middle__left-column {

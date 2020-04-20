@@ -22,7 +22,7 @@
   padding-left: 35px;
   background-image: url("../img/envelope.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 0 center;
   margin-left: 4.9%;
 }
 
@@ -33,7 +33,7 @@
   padding-left: 35px;
   background-image: url("../img/phone-call.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 0 center;
 }
 
 .main-nav__link:hover,
@@ -48,7 +48,7 @@
 }
 
 .main-nav__order {
-  margin-left: 1.3%;
+  margin-left: 1%;
 }
 
 .main-nav__tel {
@@ -74,7 +74,7 @@
     height: 30px;
     margin-left: 0;
     background-image: url("../img/phone-call-big.svg");
-    background-position: center;
+    background-position: 100% 30%;
   }
 
   .main-nav__link-mail {
@@ -83,16 +83,34 @@
     margin-left: 0;
     padding-left: 0;
     background-image: url("../img/envelope-big.svg");
-    background-position: center;
+    background-position: 100% 30%;
   }
 
   .main-nav__text {
     display: none;
   }
+
+  .main-nav__tel {
+    margin-left: 3.2%;
+  }
+  
+  .main-nav__email {
+    margin-left: 3.2%;
+  }
 }
 
 @media (max-width: $mobile-full-width) {
   .main-nav {
-    margin-bottom: 25px;
+    margin-bottom: 31px;
+    padding-left: 7%;
+    padding-right: 4.3%;
+  }
+
+  .main-nav__tel {
+    margin-left: 4.2%;
+  }
+
+  .main-nav__email {
+    margin-left: 4.2%;
   }
 }

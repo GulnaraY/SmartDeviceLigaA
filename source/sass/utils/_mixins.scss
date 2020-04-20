@@ -2,8 +2,7 @@
   box-sizing: border-box;
   width: auto;
   padding-left: 13%;
-  padding-right: 13%;
-  // margin: 0 auto;
+  padding-right: 13.3%;
 }
 
 @mixin desktop-middle-wrapper {
@@ -11,7 +10,6 @@
   max-width: auto;
   padding-left: 20%;
   padding-right: 20%;
-  // margin: 0 auto;
 }
 
 @mixin desktop-full-wrapper {
@@ -22,9 +20,8 @@
 
 @mixin tablet-wrapper {
   width: auto;
-  padding-left: 3.3%;
+  padding-left: 4%;
   padding-right: 3.3%;
-  // margin: 0 auto;
 }
 
 @mixin tablet-full-wrapper {

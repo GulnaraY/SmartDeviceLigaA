@@ -19,14 +19,14 @@
   text-transform: uppercase;
   font-size: $font-size-desctop-xl;
   line-height: $line-height-xs;
-  letter-spacing: -5.6px;
+  letter-spacing: 0.0007em;
   margin-top: 62px;
 }
 
 @media (max-width: $tablet-full-width) {
   .page-header {
     @include tablet-full-wrapper;
-    padding-top: 17px;
+    padding-top: 13px;
     background-image: url("../img/triangles-tablet.svg"), url("../img/bg-banner.png");
     background-position: 113% 0, 0 0;
   }
@@ -34,8 +34,8 @@
   .page-header h1 {
     width: 370px;
     font-size: $font-size-desktop-l;
-    margin-bottom: 34px;
-    margin-top: 77px;
+    margin-bottom: 38px;
+    margin-top: 79px;
   }
 }
 
@@ -49,5 +49,6 @@
     width: 222px;
     font-size: $font-size-mobile-xl;
     margin-top: -24px;
+    margin-bottom: 31px;
   }
 }
