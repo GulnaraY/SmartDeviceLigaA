@@ -3,14 +3,19 @@
 }
 
 .about-us__container {
-  @include desktop-middle-wrapper;
+  @include tablet-wrapper;
   box-sizing: border-box;
-  width: 100%;
-  padding-left: 29%;
   padding-bottom: 108px;
+
+  margin: 0 auto;
+  max-width: 1288px;
+}
+
+.about-us__right {
+  padding-left: 15%;
   background-image: url("../img/year2005.png");
   background-repeat: no-repeat;
-  background-position: 21% 18%;
+  background-position: 0 0;
 }
 
 .about-us__title {
@@ -20,6 +25,7 @@
   font-size: $font-size-desktop-h2;
   font-weight: normal;
   margin-bottom: 26px;
+  
 }
 
 .about-us__text {
@@ -45,10 +51,12 @@
   .about-us__container {
     @include tablet-wrapper;
     width: auto;
-    padding-left: 28%;
-    background-image: url("../img/year2005-tablet.png");
-    background-position: 4% 0;
     padding-bottom: 78px;
+  }
+
+  .about-us__right {
+    padding-left: 26%;
+    background-image: url("../img/year2005-tablet.png");
   }
 
   .about-us__title {
@@ -78,8 +86,12 @@
 @media (max-width: $mobile-full-width) {
   .about-us__container {
     @include mobile-wrapper;
-    background-image: none;
     padding-bottom: 62px;
+  }
+
+  .about-us__right {
+    background-image: none;
+    padding-left: 0;
   }
 
   .about-us__title {

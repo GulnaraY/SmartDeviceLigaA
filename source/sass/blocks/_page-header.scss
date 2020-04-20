@@ -2,14 +2,10 @@
   @include desktop-full-wrapper;
   color: $content-color;
   padding-top: 25px;
-  background-image: url("../img/circuit-board.png"), url("../img/triangle.png"), url("../img/bg-banner.png");
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 85% 70%, 81% 70%, 0 0;
+  background-image:  url("../img/triangle.png"), url("../img/bg-banner.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position:  81% 70%, 0 0;
   background-color: $header-background-color;
-}
-
-.page-header__wrapper {
-  @include desktop-wrapper;
   display: flex;
   flex-direction: column;
 }
@@ -18,23 +14,15 @@
   .page-header {
     @include tablet-full-wrapper;
     padding-top: 17px;
-    background-image: url("../img/circuit-board-tablet.png"), url("../img/triangles-tablet.svg"), url("../img/bg-banner.png");
-    background-position: 100% 32%, 113% 0, 0 0;
+    background-image: url("../img/triangles-tablet.svg"), url("../img/bg-banner.png");
+    background-position: 113% 0, 0 0;
   }
 
-  .page-header__wrapper {
-    @include tablet-wrapper;
-    background-position: 100% 32%, 100% 27%, 0 0;
-  }
 }
 
 @media (max-width: $mobile-full-width) {
-  .page-header__wrapper {
-    @include mobile-wrapper;
-  }
-
   .page-header {
-    background-image: url("../img/circuit-board-mob.png"), url("../img/triangles-mob.png"), url("../img/bg-banner.png");
-    background-position: 57% 23%, 100% 27%, 0 0;
+    background-image: url("../img/triangles-mob.png"), url("../img/bg-banner.png");
+    background-position: 100% 27%, 0 0;
   }
 }

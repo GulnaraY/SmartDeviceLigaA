@@ -6,7 +6,8 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 225px;
+  margin-bottom: 163px;
+  @include desktop-wrapper
 }
 
 .main-nav__link {
@@ -59,7 +60,8 @@
 
 @media (max-width: $tablet-full-width) {
   .main-nav {
-    margin-bottom: 110px;
+    margin-bottom: 31px;
+    @include tablet-wrapper;
   }
 
   .main-nav__order {
@@ -90,6 +92,6 @@
 
 @media (max-width: $mobile-full-width) {
   .main-nav {
-    margin-bottom: 220px;
+    margin-bottom: 25px;
   }
 }

@@ -17,7 +17,6 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__wrapper">
       <nav class="site-navigation">
         <ul class="main-nav">
           <li class="main-nav__item logo-item">
@@ -42,15 +41,18 @@
         </ul>
       </nav>
       <div class="header-middle">
-        <h1 class="page-title">Печатные платы</h1>
-        <p class="page-promo">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a href="#questions" class="link-to-consultation button button--blue"><span
-            class="link-to-consultation__text link-to-consultation__text--desctop">Получить
-            бесплатную консультацию</span><span class="link-to-consultation__text link-to-consultation__text--mobile">Бесплатная
-            консультация</span></a>
-        <a href="#features" class="scroll-link">Скролл вниз</a>
+        <div class="header-middle__left-column">
+          <h1 class="page-title">Печатные платы</h1>
+          <p class="page-promo">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+          <a href="#questions" class="link-to-consultation button button--blue"><span
+              class="link-to-consultation__text link-to-consultation__text--desctop">Получить
+              бесплатную консультацию</span><span
+              class="link-to-consultation__text link-to-consultation__text--mobile">Бесплатная
+              консультация</span></a>
+          <a href="#features" class="scroll-link">Скролл вниз</a>
+        </div>
+        <div class="header-middle__right-column"></div>
       </div>
-    </div>
   </header>
   <div class="page-middle">
     <section class="features" id="features">
@@ -82,15 +84,17 @@
     </section>
     <section class="about-us">
       <div class="about-us__container">
-        <h2 class="about-us__title">О компании</h2>
-        <p class="about-us__text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем
-          мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней. </p>
-        <p class='about-us__text'>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE,
-          HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских
-          Железных Дорог<span class="about-us__etc">...</span><span class="about-us__additional-text">(РЖД),
-            РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие
-            Производители светотехники России.</span></p>
-        <a href="#" class="about-us__button button button--border">Подробнее</a>
+        <div class="about-us__right">
+          <h2 class="about-us__title">О компании</h2>
+          <p class="about-us__text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем
+            мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней. </p>
+          <p class='about-us__text'>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE,
+            HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских
+            Железных Дорог<span class="about-us__etc">...</span><span class="about-us__additional-text">(РЖД),
+              РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие
+              Производители светотехники России.</span></p>
+          <a href="#" class="about-us__button button button--border">Подробнее</a>
+        </div>
       </div>
     </section>
   </div>
@@ -120,12 +124,13 @@
     <div class="questions__container">
       <div class="questions__left-part"></div>
       <div class="questions__right-part">
-      <h2 class="questions__title">Остались вопросы? Задайте иx нам!</h2>
-      <p class="questions__text">Мы проконсультируем Вас бесплатно</p>
-      <form action="#" method="post" class="questions__form questions-form" id="page-form">
-        <input type="text" name="name" placeholder="Имя" id="questions-name" id="name-input" required>
-        <input type="tel" name="phone" placeholder="Телефон" id="tel-page" required maxlength="14" minlength="14" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
-        <textarea rows="3" name="text" placeholder="Ваш вопрос"></textarea required id="page-text">
+        <h2 class="questions__title">Остались вопросы? Задайте иx нам!</h2>
+        <p class="questions__text">Мы проконсультируем Вас бесплатно</p>
+        <form action="#" method="post" class="questions__form questions-form" id="page-form">
+          <input type="text" name="name" placeholder="Имя" id="questions-name" id="name-input" required>
+          <input type="tel" name="phone" placeholder="Телефон" id="tel-page" required maxlength="14" minlength="14"
+            pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+          <textarea rows="3" name="text" placeholder="Ваш вопрос"></textarea required id="page-text">
         <button class="button" type="submit">Задать вопрос</button>
         <input type="checkbox" name="agreement" id="agreement-field" checked>
         <label for="agreement-field">Я согласен на обработку персональных данных</label>
@@ -209,12 +214,12 @@
         <input type="tel" name="phone" placeholder="Телефон" id="popup-phone" required maxlength="14" minlength="14" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
         <textarea rows="3" name="text"
           placeholder="Ваш вопрос" id="popup-message" required></textarea>
-        <button class="button popup__form-button" type="submit">Отправить</button>
-        <input type="checkbox" name="agreement" id="popup-agreement" checked>
-        <label for="popup-agreement">Я согласен на обработку персональных
-          данных</label>
-      </form>
-    </div>
+          <button class="button popup__form-button" type="submit">Отправить</button>
+          <input type="checkbox" name="agreement" id="popup-agreement" checked>
+          <label for="popup-agreement">Я согласен на обработку персональных
+            данных</label>
+        </form>
+      </div>
   </section>
   <div class="popup-overlay"></div>
   <script src="js/script.js"></script>

@@ -1,18 +1,60 @@
 .header-middle {
-  margin-bottom: 278px;
+  margin-bottom: 103px;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  @include desktop-wrapper;
+  padding-right: 0;
+}
+
+.header-middle__left-column {
+  width: 44%;
+  position: relative;
+}
+
+.header-middle__right-column {
+  width: 53%;
+  background-image: url("../img/circuit-board.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  min-height: 520px;
 }
 
 @media (max-width: $tablet-full-width) {
   .header-middle {
-    margin-bottom: 166px;
+    margin-bottom: 54px;
     margin-left: 8.6%;
+    @include tablet-wrapper;
+    padding-right: 0;
+  }
+
+  .header-middle__left-column {
+
+  }
+
+  .header-middle__right-column {
+    background-image: url("../../img/circuit-board-tablet.png");
+    background-position: 100% 0;
   }
 }
 
 @media (max-width: $mobile-full-width) {
   .header-middle {
-    margin-bottom: 44px;
+    margin-bottom: 40px;
     margin-left: 0;
+    flex-direction: column-reverse;
+  }
+
+  .header-middle__left-column {
+    width: 100%;
+    @include mobile-wrapper;
+    box-sizing: border-box;
+  }
+
+  .header-middle__right-column {
+    background-image: url("../img/circuit-board-mob.png");
+    background-position: 100% 0;
+    width: 100%;
+    min-height: 222px;
   }
 }
