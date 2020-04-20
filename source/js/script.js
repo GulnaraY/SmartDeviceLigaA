@@ -205,7 +205,7 @@ var handleFormSubmit = function (evt) {
 };
 
 var handlePageFormSubmit = function (evt) {
-  if (!pageFormArgeement.checked || !pageNameField.value || !pageTextField.value || phonePageField.value.length < 14) {
+  if (!pageFormArgeement.checked || !pageNameField.value || !pageTextField.value || (phonePageField.value.length < 14)) {
     evt.preventDefault();
   }
 };

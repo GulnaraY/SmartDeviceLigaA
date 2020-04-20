@@ -124,7 +124,7 @@
       <p class="questions__text">Мы проконсультируем Вас бесплатно</p>
       <form action="#" method="post" class="questions__form questions-form" id="page-form">
         <input type="text" name="name" placeholder="Имя" id="questions-name" id="name-input" required>
-        <input type="tel" name="phone" placeholder="Телефон" id="tel-page" required maxlength="14" minlength="14">
+        <input type="tel" name="phone" placeholder="Телефон" id="tel-page" required maxlength="14" minlength="14" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
         <textarea rows="3" name="text" placeholder="Ваш вопрос"></textarea required id="page-text">
         <button class="button" type="submit">Задать вопрос</button>
         <input type="checkbox" name="agreement" id="agreement-field" checked>
@@ -206,7 +206,7 @@
       <form action="#" method="post" class="questions-form popup__form">
         <input type="text" name="name" placeholder="Имя"
           id="popup-name" required>
-        <input type="tel" name="phone" placeholder="Телефон" id="popup-phone" required maxlength="14" minlength="14">
+        <input type="tel" name="phone" placeholder="Телефон" id="popup-phone" required maxlength="14" minlength="14" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
         <textarea rows="3" name="text"
           placeholder="Ваш вопрос" id="popup-message" required></textarea>
         <button class="button popup__form-button" type="submit">Отправить</button>
