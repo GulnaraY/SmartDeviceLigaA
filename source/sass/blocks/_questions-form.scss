@@ -41,6 +41,7 @@
   background-color: $content-opacity-color;
   color: $content-color;
   margin-bottom: 42px;
+  resize: none;
 }
 
 .questions-form textarea::-webkit-input-placeholder {

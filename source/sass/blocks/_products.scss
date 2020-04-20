@@ -6,7 +6,9 @@
 }
 
 .products__container {
-  @include desktop-middle-wrapper;
+  @include tablet-wrapper;
+  max-width: 1174px;
+  margin: 0 auto;
 }
 
 .products__title {
