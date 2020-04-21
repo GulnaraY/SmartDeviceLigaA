@@ -9,7 +9,8 @@
 
 .features__container {
   @include tablet-wrapper;
-  max-width: 1173px;
+  max-width: 1170px;
+  padding-right: 3.3%;
   margin: 0 auto;
   display: flex;
 }

@@ -40,7 +40,7 @@
   border: none;
   background-color: $content-opacity-color;
   color: $content-color;
-  margin-bottom: 42px;
+  margin-bottom: 44px;
   resize: none;
 }
 
@@ -81,7 +81,7 @@
   content: "";
   position: absolute;
   left: 0;
-  top: 44%;
+  top: 38%;
   margin-top: -8px;
   width: 16px;
   height: 16px;
@@ -129,9 +129,13 @@
   }
 
   .questions-form label {
-    margin-left: 34px;
-    margin-top: 20px;
+    margin-left: 0;
+    margin-top: 27px;
     width: 100%;
     padding-top: 0;
+  }
+
+  .questions-form label::before {
+    top: 28%;
   }
 }
