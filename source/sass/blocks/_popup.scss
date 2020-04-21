@@ -32,8 +32,8 @@
   position: absolute;
   height: 23px;
   width: 23px;
-  top: 5px;
-  right: 5px;
+  top: 16px;
+  right: 18px;
   border: 0;
   padding: 0;
   margin: 0;
@@ -101,6 +101,11 @@
 
 .popup__form label {
   width: 100%;
-  margin-left: 34px;
+  padding-left: 30px;
+  margin-left: 0;
   margin-bottom: 34px;
+}
+
+.popup__form label::before {
+  top: 60%;
 }
