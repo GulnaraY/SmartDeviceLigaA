@@ -1,6 +1,11 @@
 .page-footer {
   @include desktop-full-wrapper;
   position: relative;
+  color: $accent-color-4;
+}
+
+.page-footer a {
+  color: $accent-color-4;
 }
 
 .page-footer::after {
@@ -65,7 +70,6 @@
 }
 
 .page-footer__bottom a {
-  color: $main-color;
   text-transform: uppercase;
   font-size: $font-size-desktop-sx;
 }
@@ -96,6 +100,7 @@
   text-transform: uppercase;
   font-family: $font-additional;
   font-size: $font-size-desktop-ss;
+  color: $accent-color-3;
 }
 
 
