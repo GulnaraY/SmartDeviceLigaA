@@ -23,7 +23,7 @@
   background-image: url("../img/airplane.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 0 40%;
+  background-position: 0 39.5%;
 }
 
 .questions__right-part {
@@ -60,8 +60,8 @@
     @include tablet-wrapper;
     background-image: none;
     padding-top: 79px;
-    padding-bottom: 102px;
-    padding-left: 12.3%;
+    padding-bottom: 103px;
+    padding-left: 12%;
     padding-right: 7.3%;
   }
 
@@ -82,7 +82,7 @@
 
   .questions p {
     width: 100%;
-    margin-bottom: 57px;
+    margin-bottom: 54px;
   }
 }
 
@@ -90,14 +90,15 @@
   .questions__container {
     @include mobile-wrapper;
     padding-top: 29px;
-    padding-bottom: 37px;
+    padding-bottom: 41px;
   }
 
   .questions h2 {
     font-size: $font-size-mobile-h2;
+    margin-bottom: 14px;
   }
 
   .questions p {
-    margin-bottom: 26px;
+    margin-bottom: 27px;
   }
 }

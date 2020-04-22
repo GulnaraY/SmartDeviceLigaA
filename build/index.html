@@ -80,7 +80,7 @@
             мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней. </p>
           <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE,
             HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских
-            Железных Дорог<span class="about-us__etc">...</span><span class="about-us__additional-text">(РЖД),
+            Железных Дорог<span class="about-us__etc">..</span><span class="about-us__additional-text">(РЖД),
               РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие
               Производители светотехники России.</span></p>
           <a href="#" class="about-us__button button button--border">Подробнее</a>
@@ -93,7 +93,7 @@
       <h2>Service Device предлагает следующие товары и услуги</h2>
       <ul class="products-list">
         <li class="products-list__item">
-          <a class="products-list__link" href="#"><span class="visually-hidden">ссылка на
+          <a class="products-list__link products-list__link--prod" href="#"><span class="visually-hidden">ссылка на
               страницу каталога Производство печатных плат</span>
             <h3>Производство печатных плат</h3>
             <div class="products-list__pic-container products-list__pic-container--prod"></div>
@@ -122,12 +122,12 @@
       <div class="questions__right-part">
         <h2>Остались вопросы? Задайте иx нам!</h2>
         <p>Мы проконсультируем Вас бесплатно</p>
-        <form class="questions__form questions-form" id="page-form">
+        <form class="questions__form questions-form" method="post" action="https://echo.htmlacademy.ru" id="page-form">
           <input type="text" name="name" placeholder="Имя" id="name-input" required="" aria-label="введите имя">
           <input type="tel" name="phone" placeholder="Телефон" id="tel-page" required="" maxlength="14" minlength="14" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" aria-label="введите номер телефона">
           <textarea rows="3" name="text" placeholder="Ваш вопрос" required="" id="page-text" aria-label="напишите ваш вопрос"></textarea>
         <button class="button" type="submit">Задать вопрос</button>
-        <input type="checkbox" name="agreement" id="agreement-field" checked="">
+        <input class="visually-hidden" type="checkbox" name="agreement" id="agreement-field" checked="">
         <label for="agreement-field">Я согласен на обработку персональных данных</label>
       </form>
       </div>
@@ -155,13 +155,13 @@
           <button class="page-parts__show page-parts__show--shown" type="button"><span class="visually-hidden">Показать</span></button>
           <button class="page-parts__hide page-parts__hide--hidden" type="button"><span class="visually-hidden">Скрыть</span></button>
           <ul class="page-parts__list page-parts__list--closed">
-            <li class="page-parts__item"><a href="" class="page-parts__link">О компании</a></li>
-            <li class="page-parts__item"><a href="" class="page-parts__link">Продукты</a></li>
-            <li class="page-parts__item"><a href="" class="page-parts__link">Производство печатных плат</a></li>
-            <li class="page-parts__item"><a href="" class="page-parts__link">Монтаж печатных плат</a></li>
-            <li class="page-parts__item"><a href="" class="page-parts__link">Комплектующие</a></li>
-            <li class="page-parts__item"><a href="" class="page-parts__link">Доставка</a></li>
-            <li class="page-parts__item"><a href="" class="page-parts__link">Контакты</a></li>
+            <li class="page-parts__item page-parts__item--about"><a href="" class="page-parts__link">О компании</a></li>
+            <li class="page-parts__item page-parts__item--products"><a href="" class="page-parts__link">Продукты</a></li>
+            <li class="page-parts__item page-parts__item--production"><a href="" class="page-parts__link">Производство печатных плат</a></li>
+            <li class="page-parts__item page-parts__item--install"><a href="" class="page-parts__link">Монтаж печатных плат</a></li>
+            <li class="page-parts__item page-parts__item--complection"><a href="" class="page-parts__link">Комплектующие</a></li>
+            <li class="page-parts__item page-parts__item--delivery"><a href="" class="page-parts__link">Доставка</a></li>
+            <li class="page-parts__item page-parts__item--contacts"><a href="" class="page-parts__link">Контакты</a></li>
           </ul>
         </section>
         <section class="page-footer__address address">
@@ -195,12 +195,12 @@
       <button class="popup__close" type="button"><span class="visually-hidden">Закрыть</span></button>
       <h2>Закажите звонок</h2>
       <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-      <form class="questions-form popup__form">
+      <form class="questions-form popup__form" method="post" action="https://echo.htmlacademy.ru">
         <input type="text" name="name" placeholder="Имя" id="popup-name" required="" aria-label="введите имя">
         <input type="tel" name="phone" placeholder="Телефон" id="popup-phone" required="" maxlength="14" minlength="14" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" aria-label="введите номер телефона">
         <textarea rows="3" name="text" placeholder="Ваш вопрос" id="popup-message" required="" aria-label="введите сообщение"></textarea>
           <button class="button popup__form-button" type="submit">Отправить</button>
-          <input type="checkbox" name="agreement" id="popup-agreement" checked="">
+          <input class="visually-hidden" type="checkbox" name="agreement" id="popup-agreement" checked="">
           <label for="popup-agreement">Я согласен на обработку персональных
             данных</label>
         </form>

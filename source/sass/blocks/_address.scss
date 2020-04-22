@@ -12,7 +12,6 @@
 .address p {
   margin: 0;
   padding: 0;
-  margin-bottom: 7px;
   width: 100%;
 }
 
@@ -20,10 +19,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.address__phone-item {
-  margin-bottom: 7px;
 }
 
 .address__phone-link {
@@ -126,7 +121,8 @@
   }
 
   .address p {
-    margin-bottom: 12px;
+    margin-bottom: 3px;
+    width: 97%;
   }
 
   .address__phone-list {

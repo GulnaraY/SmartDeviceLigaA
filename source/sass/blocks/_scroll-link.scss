@@ -2,9 +2,10 @@
   position: absolute;
   color: $content-color;
   opacity: 0.5;
-  top: 480px;
-  left: -5%;
+  top: 478px;
+  left: -4.5%;
   transform: rotate(-90deg);
+  font-size: $font-size-desktop-xs;
 }
 
 .scroll-link:hover,

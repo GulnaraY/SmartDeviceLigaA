@@ -1,6 +1,6 @@
 .header-middle {
   @include desktop-wrapper;
-  margin-bottom: 103px;
+  margin-bottom: 102px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -44,7 +44,7 @@
 @media (max-width: $tablet-full-width) {
   .header-middle {
     @include tablet-wrapper;
-    margin-bottom: 58px;
+    margin-bottom: 57px;
     margin-left: 8.6%;
     padding-left: 2.9%;
     padding-right: 0;
@@ -59,7 +59,7 @@
     padding-left: 50px;
     width: 356px;
     font-size: $font-size-medium;
-    margin-bottom: 57px;
+    margin-bottom: 55px;
   }
 
   .header-middle p::before {
@@ -71,7 +71,7 @@
 
 @media (max-width: $mobile-full-width) {
   .header-middle {
-    margin-bottom: 42px;
+    margin-bottom: 41px;
     margin-left: 0;
     flex-direction: column-reverse;
     padding-left: 0;

@@ -110,6 +110,10 @@
     height: 256px;
   }
 
+  .products-list__link--lights h3 {
+    top: 20%;
+  }
+
   .products-list__pic-container--prod {
     background-image: url("../img/prod-tablet.jpg");
   }
@@ -132,6 +136,11 @@
   .products-list h3 {
     top: 8%;
     left: 11%;
+  }
+
+  .products-list__link--lights h3 {
+    top: 12%;
+    left: 12%;
   }
 
   .products-list__link {

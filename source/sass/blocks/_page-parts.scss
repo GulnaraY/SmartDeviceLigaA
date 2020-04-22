@@ -100,13 +100,77 @@
   display: flex;
 }
 
+.page-parts__item--about {
+  order: 1;
+}
+
+.page-parts__item--products {
+  order: 3;
+}
+
+.page-parts__item--production {
+  order: 5;
+}
+
+.page-parts__item--install {
+  order: 7;
+}
+
+.page-parts__item--complection {
+  order: 2;
+}
+
+.page-parts__item--delivery {
+  order: 4;
+}
+
+.page-parts__item--contacts {
+  order: 6;
+}
+
 @media (max-width: $tablet-full-width) {
   .page-parts__list {
     flex-direction: column;
   }
+
+  .page-parts__item {
+    width: 100%;
+  }
+
+  .page-parts__item--about {
+    order: 1;
+  }
+
+  .page-parts__item--products {
+    order: 2;
+  }
+
+  .page-parts__item--production {
+    order: 3;
+  }
+
+  .page-parts__item--install {
+    order: 4;
+  }
+
+  .page-parts__item--complection {
+    order: 5;
+  }
+
+  .page-parts__item--delivery {
+    order: 6;
+  }
+
+  .page-parts__item--contacts {
+    order: 7;
+  }
 }
 
 @media (max-width: $mobile-full-width) {
+  .page-parts__list {
+    margin-bottom: 20px;
+  }
+
   .page-parts__show--shown {
     display: block;
   }

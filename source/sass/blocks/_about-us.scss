@@ -40,7 +40,7 @@
 }
 
 .about-us__button {
-  margin-top: 17px;
+  margin-top: 10px;
   margin-bottom: 7px;
 }
 
@@ -52,7 +52,7 @@
   .about-us__container {
     @include tablet-wrapper;
     width: auto;
-    padding-bottom: 73px;
+    padding-bottom: 75px;
   }
 
   .about-us__right {
@@ -70,11 +70,11 @@
 
   .about-us p {
     width: 532px;
-    margin-bottom: 28px;
+    margin-bottom: 22px;
   }
 
   .about-us__button {
-    margin-top: 19px;
+    margin-top: 23px;
   }
 
   .about-us__etc {
@@ -89,7 +89,7 @@
 @media (max-width: $mobile-full-width) {
   .about-us__container {
     @include mobile-wrapper;
-    padding-bottom: 55px;
+    padding-bottom: 57px;
   }
 
   .about-us__right {
@@ -109,6 +109,6 @@
   }
 
   .about-us__button {
-    margin-top: 0;
+    margin-top: -16px;
   }
 }

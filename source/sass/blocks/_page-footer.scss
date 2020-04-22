@@ -2,6 +2,7 @@
   @include desktop-full-wrapper;
   position: relative;
   color: $accent-color-4;
+  line-height: $line-height-l;
 }
 
 .page-footer a {
@@ -15,7 +16,7 @@
   height: 1px;
   background-color: $border-color;
   left: 0;
-  bottom: 18%;
+  bottom: 20%;
 }
 
 .page-footer__container {
@@ -34,6 +35,7 @@
   align-items: flex-start;
   justify-content: space-between;
   width: 30%;
+  letter-spacing: 0.04em;
 }
 
 .page-footer img {
@@ -41,7 +43,7 @@
 }
 
 .page-footer__parts {
-  max-width: 661px;
+  max-width: 656px;
 }
 
 .page-footer__address {
@@ -50,17 +52,18 @@
 
 .page-footer__law {
   display: flex;
-  width: 106%;
+  width: 108%;
   justify-content: space-between;
   font-size: $font-size-desktop-sx;
   text-transform: uppercase;
 }
 
 .page-footer__bottom {
-  margin-top: -28px;
-  width: 58%;
+  margin-top: -35px;
+  width: 57.5%;
   display: flex;
   justify-content: space-between;
+  letter-spacing: 0.04em;
 }
 
 .page-footer__middle {
@@ -101,12 +104,15 @@
   font-family: $font-additional;
   font-size: $font-size-desktop-ss;
   color: $accent-color-3;
+  letter-spacing: 0.05em;
+  line-height: $line-height-xs;
 }
 
 
 @media (max-width: $tablet-full-width) {
   .page-footer {
     @include tablet-full-wrapper;
+    margin-bottom: 23px;
   }
 
   .page-footer::before {
@@ -116,7 +122,7 @@
     height: 1px;
     background-color: $border-color;
     left: 0;
-    top: 23%;
+    top: 22%;
   }
 
   .page-footer::after {
@@ -143,7 +149,7 @@
 
   .page-footer__middle {
     width: 100%;
-    margin-bottom: 36px;
+    margin-bottom: 66px;
   }
 
   .page-footer__rights {
@@ -163,11 +169,11 @@
   .page-footer__law {
     width: auto;
     margin-top: 10px;
-    margin-left: 7px;
+    margin-left: 17px;
   }
 
   .page-footer__parts {
-    width: 53%;
+    width: 52%;
   }
 
   .page-footer img {
@@ -176,6 +182,10 @@
 }
 
 @media (max-width: $mobile-full-width) {
+  .page-footer {
+    margin-bottom: 13px;
+  }
+
   .page-footer::after {
     display: none;
   }
@@ -207,7 +217,7 @@
     align-items: center;
     justify-content: space-around;
     height: 94px;
-    margin-top: 15px;
+    margin-top: 18px;
   }
 
   .page-footer__parts {
