@@ -20,7 +20,6 @@ var pageFormArgeement = document.querySelector('#agreement-field');
 var phonePageField = document.querySelector('#tel-page');
 var pageNameField = document.querySelector('#name-input');
 var pageTextField = document.querySelector('#page-text');
-
 var isStorageSupport = true;
 var storageName = '';
 var storagePhone = '';
