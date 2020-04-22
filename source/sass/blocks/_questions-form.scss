@@ -33,6 +33,20 @@
   color: $content-color;
 }
 
+.questions-form input:placeholder {
+  color: $content-color;
+}
+
+.questions-form input:hover {
+  outline: 1px solid $content-color;
+}
+
+.questions-form input:focus {
+  background-color: $content-color;
+  color: $main-color;
+  outline: none;
+}
+
 .questions-form textarea {
   width: 90%;
   min-height: 125px;
@@ -42,6 +56,16 @@
   color: $content-color;
   margin-bottom: 44px;
   resize: none;
+}
+
+.questions-form textarea:focus {
+  background-color: $content-color;
+  color: $main-color;
+  outline: none;
+}
+
+.questions-form textarea:hover {
+  outline: 1px solid $content-color;
 }
 
 .questions-form textarea::-webkit-input-placeholder {
@@ -92,6 +116,10 @@
   background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.questions-form label:hover::before {
+  transform: scale(1.2);
 }
 
 @media (max-width: $tablet-full-width) {
