@@ -32,7 +32,7 @@
   width: auto;
   background-color: $accent-color;
   border: none;
-  padding: 19px 6%;
+  padding: 19px 5.8%;
   font-size: $font-size-desktop-s;
 }
 
@@ -45,6 +45,7 @@
 @media (max-width: $tablet-full-width) {
   .button--blue {
     width: 379px;
+    padding: 18.5px;
   }
 }
 

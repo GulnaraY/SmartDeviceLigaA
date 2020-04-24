@@ -5,6 +5,14 @@
 
 @media (max-width: $tablet-full-width) {
   .logo-item {
+    margin-top: 6px;
+    margin-left: -1px;
+  }
+}
+
+@media (max-width: $mobile-full-width) {
+  .logo-item {
     margin-top: 4px;
+    margin-left: 1px;
   }
 }

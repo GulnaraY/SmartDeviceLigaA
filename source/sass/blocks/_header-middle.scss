@@ -44,7 +44,7 @@
 @media (max-width: $tablet-full-width) {
   .header-middle {
     @include tablet-wrapper;
-    margin-bottom: 57px;
+    margin-bottom: 56px;
     margin-left: 8.6%;
     padding-left: 2.9%;
     padding-right: 0;
@@ -71,7 +71,7 @@
 
 @media (max-width: $mobile-full-width) {
   .header-middle {
-    margin-bottom: 41px;
+    margin-bottom: 42px;
     margin-left: 0;
     flex-direction: column-reverse;
     padding-left: 0;
