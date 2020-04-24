@@ -1,19 +1,21 @@
 .header-middle {
-  @include desktop-wrapper;
-  margin-bottom: 102px;
+  @include tablet-wrapper;
+  margin-bottom: 103px;
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding-right: 0;
+  max-width: 1671px;
 }
 
 .header-middle__left-column {
-  width: 47%;
+  width: 790px;
   position: relative;
+  flex-shrink: 0;
 }
 
 .header-middle__right-column {
-  width: 53%;
+  width: 696px;
   background-image: url("../img/circuit-board.png");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -43,14 +45,19 @@
 
 @media (max-width: $tablet-full-width) {
   .header-middle {
-    @include tablet-wrapper;
     margin-bottom: 56px;
     margin-left: 8.6%;
     padding-left: 2.9%;
     padding-right: 0;
   }
 
+  .header-middle__left-column {
+    width: 50%;
+    flex-shrink: 1;
+  }
+
   .header-middle__right-column {
+    width: 50%;
     background-image: url("../img/circuit-board-tablet.png");
     background-position: 100% 5px;
   }

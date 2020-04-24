@@ -89,7 +89,8 @@
 @media (max-width: $mobile-full-width) {
   .about-us__container {
     @include mobile-wrapper;
-    padding-bottom: 57px;
+    padding-bottom: 56px;
+    padding-left: 4.9%;
   }
 
   .about-us__right {
@@ -99,16 +100,17 @@
 
   .about-us h2 {
     margin-top: 39px;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
     font-size: $font-size-mobile-h2;
   }
 
   .about-us p {
     width: auto;
-    margin-bottom: 47px;
+    line-height: 1.4;
+    margin-bottom: 40px;
   }
 
   .about-us__button {
-    margin-top: -16px;
+    margin-top: -12px;
   }
 }

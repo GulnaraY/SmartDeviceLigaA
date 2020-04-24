@@ -1,14 +1,13 @@
 .main-nav {
-  padding: 0;
-  margin: 0;
+  @include tablet-wrapper;
+  margin: 0 auto;
   list-style: none;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 163px;
-
-  @include desktop-wrapper;
+  max-width: 1406px;
 }
 
 .main-nav__link {
@@ -29,7 +28,7 @@
 .main-nav__link-tel {
   display: block;
   box-sizing: border-box;
-  width: 246px;
+  width: 242px;
   padding-left: 35px;
   background-image: url("../img/phone-call.svg");
   background-repeat: no-repeat;
