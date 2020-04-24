@@ -3,6 +3,8 @@
   position: relative;
   color: $accent-color-4;
   line-height: $line-height-l;
+  background-color: $additional-background-color;
+  padding-top: 66px;
 }
 
 .page-footer a {
@@ -26,7 +28,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  margin-top: 66px;
 }
 
 .page-footer__top {
@@ -113,6 +114,7 @@
   .page-footer {
     @include tablet-full-wrapper;
     margin-bottom: 23px;
+    padding-top: 0;
   }
 
   .page-footer::before {
@@ -132,7 +134,6 @@
   .page-footer__container {
     @include tablet-wrapper;
     flex-direction: column;
-    margin-top: 0;
   }
 
   .page-footer__top {
