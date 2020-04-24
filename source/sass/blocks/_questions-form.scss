@@ -97,6 +97,7 @@
   margin-left: 40px;
   line-height: $line-height-xs;
   cursor: pointer;
+  color: $content-opacity-color-2;
 }
 
 .questions-form label::before {
@@ -114,6 +115,10 @@
   background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.questions-form label:hover {
+  color: $content-color;
 }
 
 .questions-form label:hover::before {
