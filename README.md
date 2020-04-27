@@ -1,8 +1,8 @@
 # Smart Device. Одностраничник. Резиновая верстка.
 
-## <a href="https://github.com/GulnaraY/smart-device-responsive">Посмотреть собранную версию</a>
+## <a href="https://github.com/GulnaraYakupova/smart-device-responsive">Посмотреть собранную версию</a>
 
-## <a href="https://gulnaray.github.io/smart-device-responsive/">Посмотреть опубликованный проект</a>
+## <a href="https://gulnarayakupova.github.io/smart-device-responsive/">Посмотреть опубликованный проект</a>
 
 ## Инструкция по сборке проекта
 ### Для начала работы у вас должент быть установлен:
